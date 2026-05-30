@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos | Portfólio Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-900 text-zinc-300 antialiased selection:bg-blue-600 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight text-white hover:scale-105 transition-transform">
+                <span class="text-blue-500">Marcos</span><span class="text-red-500">.dev</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#sobre" class="text-zinc-100 hover:text-blue-300 transition-colors">Sobre</a>
+                <a href="#projetos" class="text-zinc-100 hover:text-blue-300 transition-colors">Projetos</a>
+                <a href="#contato"
+                    class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-5 py-2 rounded-xl shadow-md transition-all active:scale-95">Fale
+                    Comigo</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+        <div
+            class="absolute top-1/4 left-10 w-80 h-80 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse">
+        </div>
+        <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-red-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse"
+            style="animation-delay: 2s;"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center z-10">
+            <span
+                class="text-blue-400 font-semibold tracking-wider uppercase text-xs bg-zinc-800 border border-zinc-700 px-3 py-1 rounded-full">Disponível
+                para Projetos</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mt-5 leading-tight">
+                Construindo Aplicações Web <br>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-300 to-red-400">
+                    Modernas e Funcionais
+                </span>
+            </h1>
+            <p class="text-zinc-400 text-base md:text-lg max-w-xl mx-auto mt-6 font-medium leading-relaxed">
+                Desenvolvedor front-end focado em criar experiências interativas excelentes, código limpo e soluções
+                inteligentes com banco de dados em tempo real.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+                <a href="#projetos"
+                    class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition-all active:scale-95 text-center">
+                    Ver Meus Projetos
+                </a>
+                <a href="#sobre"
+                    class="w-full sm:w-auto border border-zinc-700 hover:bg-zinc-800 text-zinc-300 font-semibold px-8 py-3 rounded-xl transition-all active:scale-95 text-center">
+                    Conhecer Mais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Sobre Mim</h2>
+                <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div
+                class="bg-zinc-800/80 p-8 rounded-2xl shadow-xl border border-zinc-700/50 flex flex-col md:flex-row gap-8 items-center">
+                <div
+                    class="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-900 flex-shrink-0 flex items-center justify-center overflow-hidden border border-zinc-700">
+                    <img src="./images/capi.png" alt="Mascote/Foto"
+                        class="w-full h-full object-contain p-2 brightness-110">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">Olá, eu sou o Marcos</h3>
+                    <p class="text-zinc-400 leading-relaxed text-sm md:text-base">
+                        Sou um desenvolvedor entusiasta em criar soluções digitais que unem design atraente e código
+                        sólido. Especializado em tecnologias modernas como JavaScript Vanilla, Tailwind CSS e integração
+                        com BaaS como o Supabase. Meu objetivo é transformar ideias em aplicações publicadas,
+                        performáticas e focadas na experiência do usuário.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span
+                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">HTML5
+                            / CSS3</span>
+                        <span
+                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Tailwind
+                            CSS</span>
+                        <span
+                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">JavaScript
+                            (ES6+)</span>
+                        <span
+                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Supabase
+                            / Postgres</span>
+                        <span
+                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Git
+                            & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Meus Projetos</h2>
+                <p class="text-zinc-250 text-sm mt-2">Aplicações reais desenvolvidas e publicadas</p>
+                <div class="h-1 w-12 bg-blue-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div
+                        class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-blue-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">Capigenda</h4>
+                            <p class="text-blue-400 text-xs mt-1 font-medium">Productivity App</p>
+                        </div>
+                        <img src="./images/capi.png" alt="Capivara"
+                            class="w-24 h-24 object-contain absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all">
+                    </div>
+
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span
+                                    class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span
+                                    class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">JS
+                                    Vanilla</span>
+                                <span
+                                    class="bg-emerald-950/40 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Supabase</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Agenda
+                                Pessoal Segura</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+                                Sistema completo de agenda com autenticação de usuários, segurança RLS, persistência no
+                                banco e controle de status em tempo real.
+                            </p>
+                        </div>
+
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://agendamapa.netlify.app/" target="_blank"
+                                class="text-sm font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors">
+                                Abrir App 🚀
+                            </a>
+                            <a href="https://github.com/Petmarcos/capigenda" target="_blank"
+                                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
+                                GitHub 📦
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-zinc-800/10 rounded-2xl border-2 border-dashed border-zinc-800 p-8 flex flex-col items-center justify-center text-center min-h-[350px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center text-xl text-zinc-600 font-bold mb-4">
+                        +</div>
+                    <h3 class="text-zinc-500 font-bold text-base">Próximo Projeto</h3>
+                    <p class="text-zinc-600 text-xs max-w-[200px] mt-1">Em desenvolvimento... Novas soluções surgirão
+                        aqui em breve.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Fale Comigo</h2>
+                <p class="text-zinc-250 text-sm mt-2">Vamos conversar sobre oportunidades ou trocar experiências!</p>
+                <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <form name="contato" method="POST" data-netlify="true"
+                class="bg-zinc-800/50 p-8 rounded-2xl shadow-xl border border-zinc-700/50 space-y-5">
+
+                <div>
+                    <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Seu Nome</label>
+                    <input type="text" name="nome" required
+                        class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Seu
+                        E-mail</label>
+                    <input type="email" name="email" required
+                        class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Mensagem</label>
+                    <textarea name="mensagem" rows="4" required
+                        class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all resize-none"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 rounded-xl shadow-md transition-all active:scale-95">
+                    Enviar Mensagem ⚡
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-950 border-t border-zinc-800 py-8">
+        <div
+            class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-300 font-medium gap-4">
+            <p>© 2026 Marcos.dev — Desenvolvido para Portfólio.</p>
+            <div class="flex gap-6">
+                <a href="https://github.com/Petmarcos" target="_blank"
+                    class="hover:text-blue-400 transition-colors">GitHub</a>
+                <a href="#" class="hover:text-blue-300 transition-colors">Voltar ao topo ↑</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
