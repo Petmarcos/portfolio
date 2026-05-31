@@ -243,10 +243,13 @@
 
 <script>
   document.querySelector('form[name="contato"]').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita o redirecionamento padrão do HTML que está dando erro
+    e.preventDefault(); 
 
     const myForm = e.target;
     const formData = new FormData(myForm);
+    
+    // ⚠️ ISSO AQUI É O QUE FALTA: Avisar o Netlify qual é o nome do formulário
+    formData.append("form-name", "contato");
     
     fetch("/", {
       method: "POST",
@@ -254,7 +257,6 @@
       body: new URLSearchParams(formData).toString()
     })
     .then(() => {
-      // Força o navegador a ir para a página de sucesso
       window.location.href = "/sucesso.html";
     })
     .catch((error) => alert("Erro ao enviar mensagem: " + error));
