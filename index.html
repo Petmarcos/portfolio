@@ -28,29 +28,40 @@
 <body class="bg-zinc-900 text-zinc-300 antialiased selection:bg-blue-600 selection:text-white">
 
     <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" class="text-xl font-extrabold tracking-tight text-white hover:scale-105 transition-transform">
-            <span class="text-blue-500">Marcos</span><span class="text-red-500">.dev</span>
-        </a>
-        
-        <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
-            <a href="#sobre" class="text-zinc-400 hover:text-blue-400 transition-colors">Sobre</a>
-            <a href="#projetos" class="text-zinc-400 hover:text-blue-400 transition-colors">Projetos</a>
-            <a href="#contato" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-5 py-2 rounded-xl shadow-md transition-all active:scale-95">Fale Comigo</a>
-        </nav>
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight text-white hover:scale-105 transition-transform">
+                <span class="text-blue-500">Marcos</span><span class="text-red-500">.dev</span>
+            </a>
 
-        <button id="btn-menu" class="block md:hidden text-zinc-400 hover:text-white focus:outline-none transition-colors" aria-label="Abrir menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-    </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#sobre" class="text-zinc-400 hover:text-blue-400 transition-colors">Sobre</a>
+                <a href="#projetos" class="text-zinc-400 hover:text-blue-400 transition-colors">Projetos</a>
+                <a href="#contato"
+                    class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-5 py-2 rounded-xl shadow-md transition-all active:scale-95">Fale
+                    Comigo</a>
+            </nav>
 
-    <div id="menu-mobile" class="hidden md:hidden bg-zinc-900/95 border-b border-zinc-800 px-4 py-4 space-y-3 font-medium text-sm flex flex-col transition-all">
-        <a href="#sobre" class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Sobre</a>
-        <a href="#projetos" class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Projetos</a>
-        <a href="#contato" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-2.5 rounded-xl transition-all link-menu">Fale Comigo</a>
-    </div>
+            <button id="btn-menu"
+                class="block md:hidden text-zinc-400 hover:text-white focus:outline-none transition-colors"
+                aria-label="Abrir menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="menu-mobile"
+            class="hidden md:hidden bg-zinc-900/95 border-b border-zinc-800 px-4 py-4 space-y-3 font-medium text-sm flex flex-col transition-all">
+            <a href="#sobre"
+                class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Sobre</a>
+            <a href="#projetos"
+                class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Projetos</a>
+            <a href="#contato"
+                class="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-2.5 rounded-xl transition-all link-menu">Fale
+                Comigo</a>
+        </div>
     </header>
 
     <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
@@ -183,45 +194,115 @@
                         </div>
                     </div>
                 </div>
+                <!--     inicio codigo segundo card-->
+                <!-- Sehgundo projeto: Mathmanager -->
+                <div
+                    class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div
+                        class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-cyan-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">MathManager</h4>
+                            <p class="text-cyan-400 text-xs mt-1 font-medium">Educational Tool</p>
+                        </div>
+                        <span
+                            class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📐</span>
+                    </div>
 
-                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-cyan-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
-        <div class="z-10">
-            <h4 class="text-white text-2xl font-black tracking-tight">MathManager</h4>
-            <p class="text-cyan-400 text-xs mt-1 font-medium">Educational Tool</p>
-        </div>
-        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📐</span>
-    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span
+                                    class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
+                                <span
+                                    class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span
+                                    class="bg-orange-950/40 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded border border-orange-900/30 uppercase tracking-wider">Firebase</span>
+                                <span
+                                    class="bg-purple-950/40 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">Clean
+                                    Code</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Gerador
+                                Inteligente de Exercícios</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+                                Plataforma Full Stack multiusuário para professores. Cria listas de exercícios
+                                personalizadas com lógicas e enunciados contextuais dinâmicos em tempo real.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://math-manager.vercel.app/" target="_blank"
+                                class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">
+                                Abrir App 🚀
+                            </a>
+                            <a href="https://github.com/Petmarcos/math-manager" target="_blank"
+                                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
+                                GitHub 📦
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--     final do cóoigo do segundo card-->
 
-    <div class="p-6 flex-1 flex flex-col justify-between">
-        <div>
-            <div class="flex gap-2 mb-4 flex-wrap">
-                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
-                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
-                <span class="bg-orange-950/40 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded border border-orange-900/30 uppercase tracking-wider">Firebase</span>
-                <span class="bg-purple-950/40 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">Clean Code</span>
+                <!--     inicio do cóoigo do terceito card-->
+
+                <!-- Terceiro Projeto: Validador de Diplomas -->
+                <div
+                    class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <!-- Cabeçalho do Card -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-emerald-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">Capivara Learning</h4>
+                            <p class="text-emerald-400 text-xs mt-1 font-medium">Auditoria Acadêmica</p>
+                        </div>
+                        <!-- Elemento flutuante com efeito Hover igual aos outros cards -->
+                        <span
+                            class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📜</span>
+                    </div>
+
+                    <!-- Conteúdo do Card -->
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <!-- Badges de Tecnologia no padrão do portfólio -->
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span
+                                    class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
+                                <span
+                                    class="bg-teal-950/40 text-teal-400 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-900/30 uppercase tracking-wider">FastAPI</span>
+                                <span
+                                    class="bg-green-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Python</span>
+                                <span
+                                    class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
+                            </div>
+
+                            <!-- Título com transição de cor para o tom esmeralda -->
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                                Validador Inteligente de Diplomas</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+                                Ecossistema Full Stack para automação de registros acadêmicos. Realiza o cruzamento
+                                inteligente de dados e-MEC para validação de turmas e emissão de prévias de documentos.
+                            </p>
+                        </div>
+
+                        <!-- Links de Ação (Substitua pelos seus links reais da Vercel e GitHub) -->
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://SEU-APP-VALIDADOR.vercel.app/" target="_blank"
+                                class="text-sm font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
+                                Abrir App 🚀
+                            </a>
+                            <a href="https://github.com/Petmarcos/NOME-DO-REPOSITORIO" target="_blank"
+                                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
+                                GitHub 📦
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--     final código to terceito  card-->
             </div>
-            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Gerador Inteligente de Exercícios</h3>
-            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                Plataforma Full Stack multiusuário para professores. Cria listas de exercícios personalizadas com lógicas e enunciados contextuais dinâmicos em tempo real.
-            </p>
+
+
         </div>
 
-        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-            <a href="https://math-manager.vercel.app/" target="_blank"
-                class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">
-                Abrir App 🚀
-            </a>
-            <a href="https://github.com/Petmarcos/math-manager" target="_blank"
-                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
-                GitHub 📦
-            </a>
-        </div>
-    </div>
-</div>
-
-            </div>
-        </div>
     </section>
 
     <section id="contato" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
@@ -232,7 +313,7 @@
                 <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <form name="contato"  method="POST" data-netlify="true"
+            <form name="contato" method="POST" data-netlify="true"
                 class="bg-zinc-800/50 p-8 rounded-2xl shadow-xl border border-zinc-700/50 space-y-5">
                 <input type="hidden" name="form-name" value="contato" />
 
@@ -278,44 +359,44 @@
 </body>
 
 <script>
-  document.querySelector('form[name="contato"]').addEventListener('submit', function(e) {
-    e.preventDefault(); 
+    document.querySelector('form[name="contato"]').addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    const myForm = e.target;
-    const formData = new FormData(myForm);
-    
-    // ⚠️ ISSO AQUI É O QUE FALTA: Avisar o Netlify qual é o nome do formulário
-    formData.append("form-name", "contato");
-    
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(() => {
-      window.location.href = "/sucesso.html";
-    })
-    .catch((error) => alert("Erro ao enviar mensagem: " + error));
-  });
+        const myForm = e.target;
+        const formData = new FormData(myForm);
 
+        // ⚠️ ISSO AQUI É O QUE FALTA: Avisar o Netlify qual é o nome do formulário
+        formData.append("form-name", "contato");
 
-
-  // Seleciona os elementos do menu
-const btnMenu = document.getElementById('btn-menu');
-const menuMobile = document.getElementById('menu-mobile');
-const linksMenu = document.querySelectorAll('.link-menu');
-
-// Função para abrir/fechar o menu mobile ao clicar no botão
-btnMenu.addEventListener('click', () => {
-    menuMobile.classList.toggle('hidden');
-});
-
-// Fecha o menu automaticamente quando clicar em qualquer link (Sobre, Projetos, Contato)
-linksMenu.forEach(link => {
-    link.addEventListener('click', () => {
-        menuMobile.classList.add('hidden');
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+        })
+            .then(() => {
+                window.location.href = "/sucesso.html";
+            })
+            .catch((error) => alert("Erro ao enviar mensagem: " + error));
     });
-});
+
+
+
+    // Seleciona os elementos do menu
+    const btnMenu = document.getElementById('btn-menu');
+    const menuMobile = document.getElementById('menu-mobile');
+    const linksMenu = document.querySelectorAll('.link-menu');
+
+    // Função para abrir/fechar o menu mobile ao clicar no botão
+    btnMenu.addEventListener('click', () => {
+        menuMobile.classList.toggle('hidden');
+    });
+
+    // Fecha o menu automaticamente quando clicar em qualquer link (Sobre, Projetos, Contato)
+    linksMenu.forEach(link => {
+        link.addEventListener('click', () => {
+            menuMobile.classList.add('hidden');
+        });
+    });
 
 </script>
 
