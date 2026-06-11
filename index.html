@@ -36,6 +36,7 @@
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
                 <a href="#sobre" class="text-zinc-400 hover:text-blue-400 transition-colors">Sobre</a>
                 <a href="#projetos" class="text-zinc-400 hover:text-blue-400 transition-colors">Projetos</a>
+                <a href="#microlearning" class="text-zinc-400 hover:text-blue-400 transition-colors">Microlearning</a>
                 <a href="#contato"
                     class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-5 py-2 rounded-xl shadow-md transition-all active:scale-95">Fale
                     Comigo</a>
@@ -58,6 +59,8 @@
                 class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Sobre</a>
             <a href="#projetos"
                 class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Projetos</a>
+            <a href="#microlearning"
+                class="text-zinc-400 hover:text-blue-400 py-2 border-b border-zinc-800/50 transition-colors link-menu">Microlearning</a>
             <a href="#contato"
                 class="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-2.5 rounded-xl transition-all link-menu">Fale
                 Comigo</a>
@@ -194,8 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <!--     inicio codigo segundo card-->
-                <!-- Sehgundo projeto: Mathmanager -->
+
                 <div
                     class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
                     <div
@@ -240,29 +242,21 @@
                         </div>
                     </div>
                 </div>
-                <!--     final do cóoigo do segundo card-->
 
-                <!--     inicio do cóoigo do terceito card-->
-
-                <!-- Terceiro Projeto: Validador de Diplomas -->
                 <div
                     class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <!-- Cabeçalho do Card -->
                     <div
                         class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-emerald-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
                         <div class="z-10">
                             <h4 class="text-white text-2xl font-black tracking-tight">Capivara Learning</h4>
                             <p class="text-emerald-400 text-xs mt-1 font-medium">Auditoria Acadêmica</p>
                         </div>
-                        <!-- Elemento flutuante com efeito Hover igual aos outros cards -->
                         <span
                             class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📜</span>
                     </div>
 
-                    <!-- Conteúdo do Card -->
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <!-- Badges de Tecnologia no padrão do portfólio -->
                             <div class="flex gap-2 mb-4 flex-wrap">
                                 <span
                                     class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
@@ -274,7 +268,6 @@
                                     class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
                             </div>
 
-                            <!-- Título com transição de cor para o tom esmeralda -->
                             <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
                                 Validador Inteligente de Diplomas</h3>
                             <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
@@ -283,7 +276,6 @@
                             </p>
                         </div>
 
-                        <!-- Links de Ação (Substitua pelos seus links reais da Vercel e GitHub) -->
                         <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
                             <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank"
                                 class="text-sm font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
@@ -296,13 +288,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!--     final código to terceito  card-->
+    <section id="microlearning" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Pílulas de JavaScript 💡</h2>
+                <p class="text-zinc-400 text-sm mt-2">Cards dinâmicos de microaprendizagem criados para iniciantes</p>
+                <div class="h-1 w-12 bg-purple-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
-
+            <div id="container-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
         </div>
-
     </section>
 
     <section id="contato" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
@@ -359,13 +359,140 @@
 </body>
 
 <script>
+    // --- BANCO DE DADOS DINÂMICO DOS CARDS ---
+    const cardsJavaScript = [
+        {
+            id: 1,
+            badge: "Introdução",
+            titulo: "O que é JavaScript? 🤔",
+            conceito: "O JavaScript (JS) é a linguagem que dá vida à internet. Enquanto o HTML cria a estrutura e o CSS cuida do visual, o JS adiciona interatividade e comportamento em tempo real.",
+            codigo: `// HTML é o esqueleto\n// CSS é a roupa\n// JavaScript é o movimento real!`,
+            dica: "O clique do botão curtir mudar na hora é JS puro."
+        },
+        {
+            id: 2,
+            badge: "Memória",
+            titulo: "Variáveis 📦",
+            conceito: "Variáveis servem para guardar informações na memória do script. Hoje em dia, usamos 'let' para valores mutáveis e 'const' para valores estáticos.",
+            codigo: `const nome = "Marcos"; // Fixo\nlet idade = 25;\nidade = 26; // Valor atualizado!`,
+            dica: "Dê preferência ao const para um código limpo."
+        },
+        {
+            id: 3,
+            badge: "Tipos",
+            titulo: "Tipos de Dados 🗂️",
+            conceito: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos), Numbers (números inteiros/decimais) e Booleans (true/false).",
+            codigo: `let texto = "Olá mundo"; // String\nlet ano = 2026;         // Number\nlet ativo = true;       // Boolean`,
+            dica: "Lembre-se: \"20\" texto é diferente do número 20."
+        },
+        {
+            id: 4,
+            badge: "Matemática",
+            titulo: "Operadores Matemáticos ➕",
+            conceito: "Calculadora interna potente. Você possui os operadores básicos: Somar (+), Subtrair (-), Multiplicar (*) e Dividir (/). O símbolo '+' também une strings.",
+            codigo: `let preco = 50;\nlet frete = 10;\nlet total = preco + frete; // Retorna 60`,
+            dica: "Use parênteses para ditar regras de precedência."
+        },
+        {
+            id: 5,
+            badge: "Lógica",
+            titulo: "Condicionais 🚦",
+            conceito: "Fazer o código tomar decisões inteligentes. Utilizando blocos 'if' (se) e 'else' (senão), você valida regras estruturais do app.",
+            codigo: `let hora = 14;\nif (hora < 12) {\n  console.log("Bom dia");\n} else {\n  console.log("Boa tarde");\n}`,
+            dica: "As chaves { } agrupam o que roda em cada bloco."
+        },
+        {
+            id: 6,
+            badge: "Estrutura",
+            titulo: "Funções ⚙️",
+            conceito: "Blocos de código projetados para executar tarefas específicas. Você declara a lógica uma vez e a invoca dinamicamente quando precisar.",
+            codigo: `function saudar(user) {\n  return "Olá, " + user;\n}\nconsole.log(saudar("Marcos"));`,
+            dica: "Funções evitam códigos duplicados e confusos."
+        },
+        {
+            id: 7,
+            badge: "Listas",
+            titulo: "Arrays 🛒",
+            conceito: "Em vez de criar dezenas de variáveis avulsas, use os colchetes [ ] para criar uma lista de dados indexada sequencialmente.",
+            codigo: `let tags = ["React", "BaaS", "Git"];\n// O JS inicia a contagem no índice 0!\nconsole.log(tags[0]); // Saída: React`,
+            dica: "A propriedade .length mostra o tamanho total da lista."
+        },
+        {
+            id: 8,
+            badge: "Dados",
+            titulo: "Objetos 🚘",
+            conceito: "Objetos agrupam propriedades e características complexas mapeando conceitos complexos do mundo real direto para o código.",
+            codigo: `const dev = {\n  nome: "Marcos",\n  stack: "Front-end",\n  ano: 2026\n};\nconsole.log(dev.stack); // Front-end`,
+            dica: "Acesse as propriedades do objeto usando o ponto (.)."
+        },
+        {
+            id: 9,
+            badge: "Loops",
+            titulo: "Loops (Repetição) 🔄",
+            conceito: "Executar tarefas repetitivas automaticamente. O comando 'for' processa blocos iterativos com critérios de parada específicos.",
+            codigo: `for (let i = 0; i < 3; i++) {\n  console.log("Contagem: " + i);\n}`,
+            dica: "Loops são ideais para varrer listas de arrays."
+        },
+        {
+            id: 10,
+            badge: "DevTools",
+            titulo: "O Console do Navegador 🛠️",
+            conceito: "O console.log() é o melhor amigo de quem programa. Ele permite conversar e auditar o comportamento interno do script durante os testes.",
+            codigo: `// Aperte F12 no navegador\n// Vá para a aba 'Console'\nconsole.log("Testando script executado!");`,
+            dica: "Erros aparecem em vermelho no console. Leia-os!"
+        }
+    ];
+
+    // --- FUNÇÃO PARA INJETAR OS CARDS ---
+    function carregarCardsMicrolearning() {
+        const container = document.getElementById('container-cards');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        cardsJavaScript.forEach(card => {
+            const cardHtml = `
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-purple-500/50 hover:shadow-purple-500/10 transition-all overflow-hidden flex flex-col">
+                    <div class="h-28 bg-gradient-to-br from-zinc-800 via-zinc-900 to-purple-950/40 p-5 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <span class="bg-purple-950/60 text-purple-400 text-[9px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">${card.badge}</span>
+                            <h4 class="text-white text-lg font-bold tracking-tight mt-1">${card.titulo}</h4>
+                        </div>
+                        <span class="text-5xl absolute -bottom-1 -right-2 opacity-10 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-40 transition-all pointer-events-none select-none">#${card.id}</span>
+                    </div>
+
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <p class="text-zinc-400 text-xs md:text-sm leading-relaxed">
+                                ${card.conceito}
+                            </p>
+                        </div>
+
+                        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3 overflow-x-auto border-l-2 border-l-purple-500">
+                            <pre class="text-[11px] font-mono text-emerald-400 leading-normal"><code>${card.codigo}</code></pre>
+                        </div>
+
+                        <div class="border-t border-zinc-700/50 pt-3 text-[11px] text-zinc-500 italic flex items-start gap-1">
+                            <span class="text-purple-400 select-none">💡</span>
+                            <span>${card.dica}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += cardHtml;
+        });
+    }
+
+    // Inicializa a renderização assim que o DOM carregar
+    window.addEventListener('DOMContentLoaded', carregarCardsMicrolearning);
+
+
+    // --- LÓGICA DO FORMULÁRIO NETLIFY ---
     document.querySelector('form[name="contato"]').addEventListener('submit', function (e) {
         e.preventDefault();
 
         const myForm = e.target;
         const formData = new FormData(myForm);
-
-        // ⚠️ ISSO AQUI É O QUE FALTA: Avisar o Netlify qual é o nome do formulário
         formData.append("form-name", "contato");
 
         fetch("/", {
@@ -380,24 +507,20 @@
     });
 
 
-
-    // Seleciona os elementos do menu
+    // --- LÓGICA DO MENU MOBILE ---
     const btnMenu = document.getElementById('btn-menu');
     const menuMobile = document.getElementById('menu-mobile');
     const linksMenu = document.querySelectorAll('.link-menu');
 
-    // Função para abrir/fechar o menu mobile ao clicar no botão
     btnMenu.addEventListener('click', () => {
         menuMobile.classList.toggle('hidden');
     });
 
-    // Fecha o menu automaticamente quando clicar em qualquer link (Sobre, Projetos, Contato)
     linksMenu.forEach(link => {
         link.addEventListener('click', () => {
             menuMobile.classList.add('hidden');
         });
     });
-
 </script>
 
 </html>
