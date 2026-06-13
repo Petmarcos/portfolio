@@ -319,7 +319,7 @@
 </body>
 
 <script>
-    // BANCO DE DADOS DOS CURSOS (Onde você pode expandir e adicionar novos à vontade!)
+    // BANCO DE DADOS DOS CURSOS ATUALIZADO COM OS 10 CARDS COMPLETOS (3 EXEMPLOS POR CARD)
     const microlearningCourses = [
         {
             id: "js-basico",
@@ -328,28 +328,76 @@
             badge: "JavaScript",
             description: "Aprenda a sintaxe base, escopos de memória, variáveis e tipos de dados interativos.",
             coverGradient: "from-amber-500/20 via-purple-600/10 to-zinc-900",
-            // Seus cards idênticos ao print enviado:
             cards: [
                 {
                     id: "1",
                     tag: "INTRODUÇÃO",
                     title: "O que é JavaScript? 🤔",
                     desc: "O JavaScript (JS) é a linguagem que dá vida à internet. Enquanto o HTML cria a estrutura e o CSS cuida do visual, o JS adiciona interatividade e comportamento em tempo real.",
-                    code: `// HTML é o esqueleto\n// CSS é a roupa\n// JavaScript é o movimento real!`
+                    code: `// Ex 1: Alerta básico na tela\nalert("Bem-vindo ao meu portfólio!");\n\n// Ex 2: Mudando texto de um elemento HTML\ndocument.getElementById("status").innerText = "Online";\n\n// Ex 3: Ouvindo o clique de um botão\nbotao.addEventListener("click", executarAcao);`
                 },
                 {
                     id: "2",
                     tag: "MEMÓRIA",
                     title: "Variáveis 📦",
-                    desc: "Variáveis servem para guardar informações na memória do script. Hoje em dia, usamos 'let' para valores mutáveis e 'const' para valores estáticos.",
-                    code: `const nome = "Marcos"; // Fixo\nlet idade = 25;\nidade = 26; // Valor atualizado!`
+                    desc: "Variáveis servem para guardar informações na memória do script. Hoje em dia, usamos 'let' para valores mutáveis (que podem mudar) e 'const' para valores estáticos (fixos).",
+                    code: `// Ex 1: Constante (nunca muda)\nconst nomeCompleto = "Marcos Dev";\n\n// Ex 2: Let (pode mudar de valor)\nlet pontuacao = 100;\npontuacao = 150; // Atualizado!\n\n// Ex 3: Operação direta na atribuição\nlet total = pontuacao + 50;`
                 },
                 {
                     id: "3",
                     tag: "TIPOS",
-                    title: "Tipos de Dados 📁",
-                    desc: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos), Numbers (números inteiros/decimais) e Booleans (true/false).",
-                    code: `let texto = "olá mundo"; // String\nlet ano = 2026;       // Number\nlet ativo = true;     // Boolean`
+                    title: "Tipos de Dados 🗂️",
+                    desc: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos entre aspas), Numbers (números inteiros/decimais) e Booleans (verdadeiro ou falso).",
+                    code: `// Ex 1: String (Texto livre)\nlet profissao = "Desenvolvedor Front-End";\n\n// Ex 2: Number (Inteiro ou decimal)\nlet anoAtual = 2026;\nlet preco = 49.90;\n\n// Ex 3: Boolean (Verdadeiro ou Falso)\nlet usuarioLogado = true;`
+                },
+                {
+                    id: "4",
+                    tag: "CÁLCULOS",
+                    title: "Operadores Matemáticos ➕",
+                    desc: "O JavaScript realiza cálculos de forma nativa usando os operadores aritméticos tradicionais para somar, subtrair, multiplicar, dividir e descobrir o resto da divisão.",
+                    code: `// Ex 1: Soma e Subtração básicas\nlet soma = 10 + 5;     // Resultado: 15\nlet resto = 20 - 8;    // Resultado: 12\n\n// Ex 2: Multiplicação e Divisão\nlet dobro = 5 * 2;     // Resultado: 10\nlet metade = 10 / 2;   // Resultado: 5\n\n// Ex 3: Módulo (Resto da divisão)\nlet ehPar = 4 % 2;     // Resultado: 0 (Sem resto)`
+                },
+                {
+                    id: "5",
+                    tag: "DECISÕES",
+                    title: "Condicionais 🚦",
+                    desc: "Servem para criar caminhos e bifurcações lógicas no código. O bloco 'if' (se) testa uma condição verdadeira; caso contrário, o 'else' (senão) é ativado.",
+                    code: `// Ex 1: Estrutura básica Se/Senão\nif (idade >= 18) {\n  liberarAcesso();\n} else {\n  bloquearAcesso();\n}\n\n// Ex 2: Condicionais encadeadas (else if)\nif (hora < 12) {\n  print("Bom dia!");\n} else if (hora < 18) {\n  print("Boa tarde!");\n} else {\n  print("Boa noite!");\n}\n\n// Ex 3: Operador Lógico AND (&&)\nif (temIngresso && ehMaior) {\n  permitirEntrada();\n}`
+                },
+                {
+                    id: "6",
+                    tag: "FÁBRICAS",
+                    title: "Funções ⚙️",
+                    desc: "São blocos reutilizáveis de código projetados para executar uma tarefa específica. Elas podem receber dados de entrada (parâmetros) e devolver um resultado (retorno).",
+                    code: `// Ex 1: Função simples sem parâmetros\nfunction saudar() {\n  console.log("Olá, visitante!");\n}\n\n// Ex 2: Função com parâmetros de entrada\nfunction somar(a, b) {\n  return a + b;\n}\nlet resultado = somar(10, 20); // Retorna 30\n\n// Ex 3: Arrow Function moderna\nconst dobrar = (n) => n * 2;\nconsole.log(dobrar(8)); // Exibe 16`
+                },
+                {
+                    id: "7",
+                    tag: "COLEÇÕES",
+                    title: "Arrays (Listas) 🛒",
+                    desc: "Um Array é uma estrutura que permite armazenar uma lista ordenada de vários itens dentro de uma única variável, acessando-os através de índices numéricos (começando em 0).",
+                    code: `// Ex 1: Criando uma lista de compras\nconst tecnologia = ["HTML", "CSS", "JS"];\n\n// Ex 2: Acessando um item pelo índice (0 é o primeiro)\nconsole.log(tecnologia[0]); // Saída: "HTML"\n\n// Ex 3: Adicionando novos itens dinamicamente\ntecnologia.push("Tailwind"); // Insere no fim da lista`
+                },
+                {
+                    id: "8",
+                    tag: "ESTRUTURAS",
+                    title: "Objetos 🚘",
+                    desc: "Diferente das listas, os objetos modelam elementos do mundo real mapeando propriedades por chaves e valores. Eles guardam características completas de um único item.",
+                    code: `// Ex 1: Modelando um objeto estruturado\nconst carro = {\n  marca: "Fiat",\n  modelo: "Uno",\n  ano: 2010\n};\n\n// Ex 2: Acessando valores com a notação de ponto\nconsole.log(carro.modelo); // Saída: "Uno"\n\n// Ex 3: Adicionando novas propriedades ao voo\ncarro.cor = "Escarlate";`
+                },
+                {
+                    id: "9",
+                    tag: "AUTOMAÇÃO",
+                    title: "Loops (Repetição) 🔄",
+                    desc: "Loops executam o mesmo bloco de código repetidas vezes até que uma condição de parada específica seja atingida. É a base da automação de dados.",
+                    code: `// Ex 1: Loop 'for' tradicional contanto de 0 a 2\nfor (let i = 0; i < 3; i++) {\n  console.log("Número: " + i);\n}\n\n// Ex 2: Loop 'while' (enquanto a condição for real)\nlet energia = 3;\nwhile (energia > 0) {\n  energia--;\n}\n\n// Ex 3: Percorrendo um Array com forEach\nconst nomes = ["Ana", "Bia"];\nnomes.forEach(n => console.log(n));`
+                },
+                {
+                    id: "10",
+                    tag: "DEPURAÇÃO",
+                    title: "O Console 🛠️",
+                    desc: "O console do navegador é a ferramenta essencial do desenvolvedor para testar lógicas, verificar valores em tempo real e inspecionar erros no código sem interferir no design.",
+                    code: `// Ex 1: Mensagem comum de depuração\nconsole.log("O script foi carregado com sucesso!");\n\n// Ex 2: Alerta visual de erro controlado\nconsole.error("Falha ao conectar com o Supabase.");\n\n// Ex 3: Exibindo dados complexos em formato de tabela\nconst devs = [{nome: "Marcos"}, {nome: "Capi"}];\nconsole.table(devs);`
                 }
             ],
             videos: [
@@ -376,13 +424,6 @@
                     title: "Utility-First Paradigm ⚡",
                     desc: "Escreva estilos diretamente na classe do seu elemento HTML. Esqueça arquivos CSS gigantes e nomes de classes inventados.",
                     code: `<div class="bg-zinc-800 p-4 rounded-xl flex items-center">\n  <p class="text-white font-bold">Tailwind</p>\n</div>`
-                },
-                {
-                    id: "2",
-                    tag: "LAYOUT",
-                    title: "Flexbox Sem Esforço 📐",
-                    desc: "O alinhamento de itens fica intuitivo combinando a classe 'flex' com propriedades de alinhamento e espaçamento direto.",
-                    code: `\n<div class="flex flex-col md:flex-row gap-4">\n  \n</div>`
                 }
             ],
             videos: [
