@@ -22,6 +22,18 @@
         h3 {
             font-family: 'Poppins', sans-serif;
         }
+        /* Custom scrollbar para as caixas de código */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #18181b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3f3f46;
+            border-radius: 4px;
+        }
     </style>
 </head>
 
@@ -67,17 +79,13 @@
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
-        <div
-            class="absolute top-1/4 left-10 w-80 h-80 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse">
-        </div>
-        <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-red-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse"
-            style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/4 left-10 w-80 h-80 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-red-600 rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse" style="animation-delay: 2s;"></div>
 
         <div class="max-w-4xl mx-auto px-4 text-center z-10">
-            <span
-                class="text-blue-400 font-semibold tracking-wider uppercase text-xs bg-zinc-800 border border-zinc-700 px-3 py-1 rounded-full">Disponível
-                para Projetos</span>
+            <span class="text-blue-400 font-semibold tracking-wider uppercase text-xs bg-zinc-800 border border-zinc-700 px-3 py-1 rounded-full">Disponível para Projetos</span>
             <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mt-5 leading-tight">
                 Construindo Aplicações Web <br>
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-300 to-red-400">
@@ -85,65 +93,44 @@
                 </span>
             </h1>
             <p class="text-zinc-400 text-base md:text-lg max-w-xl mx-auto mt-6 font-medium leading-relaxed">
-                Desenvolvedor front-end focado em criar experiências interativas excelentes, código limpo e soluções
-                inteligentes com banco de dados em tempo real.
+                Desenvolvedor front-end focado em criar experiências interativas excelentes, código limpo e soluções inteligentes com banco de dados em tempo real.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-                <a href="#projetos"
-                    class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition-all active:scale-95 text-center">
-                    Ver Meus Projetos
-                </a>
-                <a href="#sobre"
-                    class="w-full sm:w-auto border border-zinc-700 hover:bg-zinc-800 text-zinc-300 font-semibold px-8 py-3 rounded-xl transition-all active:scale-95 text-center">
-                    Conhecer Mais
-                </a>
+                <a href="#projetos" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition-all active:scale-95 text-center">Ver Meus Projetos</a>
+                <a href="#sobre" class="w-full sm:w-auto border border-zinc-700 hover:bg-zinc-800 text-zinc-300 font-semibold px-8 py-3 rounded-xl transition-all active:scale-95 text-center">Conhecer Mais</a>
             </div>
         </div>
     </section>
 
+    <!-- SOBRE MIM -->
     <section id="sobre" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-white tracking-tight">Sobre Mim</h2>
                 <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
             </div>
-            <div
-                class="bg-zinc-800/80 p-8 rounded-2xl shadow-xl border border-zinc-700/50 flex flex-col md:flex-row gap-8 items-center">
-                <div
-                    class="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-900 flex-shrink-0 flex items-center justify-center overflow-hidden border border-zinc-700">
-                    <img src="./images/capi.png" alt="Mascote/Foto"
-                        class="w-full h-full object-contain p-2 brightness-110">
+            <div class="bg-zinc-800/80 p-8 rounded-2xl shadow-xl border border-zinc-700/50 flex flex-col md:flex-row gap-8 items-center">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-900 flex-shrink-0 flex items-center justify-center overflow-hidden border border-zinc-700">
+                    <img src="./images/capi.png" alt="Mascote/Foto" class="w-full h-full object-contain p-2 brightness-110">
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-white mb-3">Olá, eu sou o Marcos</h3>
                     <p class="text-zinc-400 leading-relaxed text-sm md:text-base">
-                        Sou um desenvolvedor entusiasta em criar soluções digitais que unem design atraente e código
-                        sólido. Especializado em tecnologias modernas como JavaScript Vanilla, Tailwind CSS e integração
-                        com BaaS como o Supabase. Meu objetivo é transformar ideias em aplicações publicadas,
-                        performáticas e focadas na experiência do usuário.
+                        Sou um desenvolvedor entusiasta em criar soluções digitais que unem design atraente e código sólido. Especializado em tecnologias modernas como JavaScript Vanilla, Tailwind CSS e integração com BaaS como o Supabase. Meu objetivo é transformar ideias em aplicações publicadas, performáticas e focadas na experiência do usuário.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-5">
-                        <span
-                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">HTML5
-                            / CSS3</span>
-                        <span
-                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Tailwind
-                            CSS</span>
-                        <span
-                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">JavaScript
-                            (ES6+)</span>
-                        <span
-                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Supabase
-                            / Postgres</span>
-                        <span
-                            class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Git
-                            & GitHub</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">HTML5 / CSS3</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Tailwind CSS</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">JavaScript (ES6+)</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Supabase / Postgres</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Git & GitHub</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- PROJETOS -->
     <section id="projetos" class="py-20 border-t border-zinc-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
@@ -153,138 +140,80 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div
-                    class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <div
-                        class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-blue-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                <!-- Card Projeto 1 -->
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-blue-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
                         <div class="z-10">
                             <h4 class="text-white text-2xl font-black tracking-tight">Capigenda</h4>
                             <p class="text-blue-400 text-xs mt-1 font-medium">Productivity App</p>
                         </div>
-                        <img src="./images/capi.png" alt="Capivara"
-                            class="w-24 h-24 object-contain absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all">
+                        <img src="./images/capi.png" alt="Capivara" class="w-24 h-24 object-contain absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all">
                     </div>
-
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex gap-2 mb-4 flex-wrap">
-                                <span
-                                    class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">Tailwind</span>
-                                <span
-                                    class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">JS
-                                    Vanilla</span>
-                                <span
-                                    class="bg-emerald-950/40 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Supabase</span>
+                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">JS Vanilla</span>
+                                <span class="bg-emerald-950/40 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Supabase</span>
                             </div>
-                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Agenda
-                                Pessoal Segura</h3>
-                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                                Sistema completo de agenda com autenticação de usuários, segurança RLS, persistência no
-                                banco e controle de status em tempo real.
-                            </p>
+                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Agenda Pessoal Segura</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Sistema completo de agenda com autenticação de usuários, segurança RLS, persistência no banco e controle de status em tempo real.</p>
                         </div>
-
                         <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-                            <a href="https://agendamapa.netlify.app/" target="_blank"
-                                class="text-sm font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors">
-                                Abrir App 🚀
-                            </a>
-                            <a href="https://github.com/Petmarcos/capigenda" target="_blank"
-                                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
-                                GitHub 📦
-                            </a>
+                            <a href="https://agendamapa.netlify.app/" target="_blank" class="text-sm font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
+                            <a href="https://github.com/Petmarcos/capigenda" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
                         </div>
                     </div>
                 </div>
 
-                <div
-                    class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <div
-                        class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-cyan-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                <!-- Card Projeto 2 -->
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-cyan-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
                         <div class="z-10">
                             <h4 class="text-white text-2xl font-black tracking-tight">MathManager</h4>
                             <p class="text-cyan-400 text-xs mt-1 font-medium">Educational Tool</p>
                         </div>
-                        <span
-                            class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📐</span>
+                        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📐</span>
                     </div>
-
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex gap-2 mb-4 flex-wrap">
-                                <span
-                                    class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
-                                <span
-                                    class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
-                                <span
-                                    class="bg-orange-950/40 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded border border-orange-900/30 uppercase tracking-wider">Firebase</span>
-                                <span
-                                    class="bg-purple-950/40 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">Clean
-                                    Code</span>
+                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
+                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span class="bg-orange-950/40 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded border border-orange-900/30 uppercase tracking-wider">Firebase</span>
                             </div>
-                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Gerador
-                                Inteligente de Exercícios</h3>
-                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                                Plataforma Full Stack multiusuário para professores. Cria listas de exercícios
-                                personalizadas com lógicas e enunciados contextuais dinâmicos em tempo real.
-                            </p>
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Gerador Inteligente de Exercícios</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Plataforma Full Stack multiusuário para professores. Cria listas de exercícios personalizadas com lógicas dinâmicas em tempo real.</p>
                         </div>
                         <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-                            <a href="https://math-manager.vercel.app/" target="_blank"
-                                class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">
-                                Abrir App 🚀
-                            </a>
-                            <a href="https://github.com/Petmarcos/math-manager" target="_blank"
-                                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
-                                GitHub 📦
-                            </a>
+                            <a href="https://math-manager.vercel.app/" target="_blank" class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
+                            <a href="https://github.com/Petmarcos/math-manager" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
                         </div>
                     </div>
                 </div>
 
-                <div
-                    class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <div
-                        class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-emerald-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                <!-- Card Projeto 3 -->
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-emerald-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
                         <div class="z-10">
                             <h4 class="text-white text-2xl font-black tracking-tight">Capivara Learning</h4>
                             <p class="text-emerald-400 text-xs mt-1 font-medium">Auditoria Acadêmica</p>
                         </div>
-                        <span
-                            class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📜</span>
+                        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📜</span>
                     </div>
-
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <div class="flex gap-2 mb-4 flex-wrap">
-                                <span
-                                    class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
-                                <span
-                                    class="bg-teal-950/40 text-teal-400 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-900/30 uppercase tracking-wider">FastAPI</span>
-                                <span
-                                    class="bg-green-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Python</span>
-                                <span
-                                    class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
+                                <span class="bg-teal-950/40 text-teal-400 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-900/30 uppercase tracking-wider">FastAPI</span>
+                                <span class="bg-green-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Python</span>
                             </div>
-
-                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
-                                Validador Inteligente de Diplomas</h3>
-                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                                Ecossistema Full Stack para automação de registros acadêmicos. Realiza o cruzamento
-                                inteligente de dados e-MEC para validação de turmas e emissão de prévias de documentos.
-                            </p>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Validador Inteligente de Diplomas</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Ecossistema Full Stack para registros acadêmicos. Cruzamento inteligente de dados e-MEC para validação de turmas.</p>
                         </div>
-
                         <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-                            <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank"
-                                class="text-sm font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
-                                Abrir App 🚀
-                            </a>
-                            <a href="https://github.com/Petmarcos/NOME-DO-REPOSITORIO" target="_blank"
-                                class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">
-                                GitHub 📦
-                            </a>
+                            <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank" class="text-sm font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
+                            <a href="https://github.com/Petmarcos/NOME-DO-REPOSITORIO" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
                         </div>
                     </div>
                 </div>
@@ -292,19 +221,61 @@
         </div>
     </section>
 
+    <!-- SEÇÃO ATUALIZADA: MICROLEARNING PLATFORM HUB -->
     <section id="microlearning" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white tracking-tight">Pílulas de JavaScript 💡</h2>
-                <p class="text-zinc-400 text-sm mt-2">Cards dinâmicos de microaprendizagem criados para iniciantes</p>
+                <h2 class="text-3xl font-bold text-white tracking-tight">Hub de Microlearning 🎓</h2>
+                <p class="text-zinc-400 text-sm mt-2">Escolha uma tecnologia e consuma pílulas de conhecimento práticas, vídeos e testes rápidos.</p>
                 <div class="h-1 w-12 bg-purple-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <div id="container-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                </div>
+            <!-- Grid de Cursos (Vitrine) -->
+            <div id="course-market-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Injetado dinamicamente via JS -->
+            </div>
         </div>
     </section>
 
+    <!-- MODAL IMPERCEPTÍVEL / ÁREA DE ESTUDOS DO CURSO SELECIONADO -->
+    <div id="course-study-modal" class="fixed inset-0 z-50 hidden bg-zinc-950/90 backdrop-blur-md items-center justify-center p-4">
+        <div class="bg-zinc-900 border border-zinc-800 w-full max-w-5xl h-[85vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
+            
+            <!-- Header do Painel -->
+            <div class="p-6 border-b border-zinc-800 bg-zinc-900 flex items-center justify-between">
+                <div>
+                    <span id="modal-course-badge" class="text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase tracking-wider bg-purple-950 text-purple-400 border border-purple-900/30">JS</span>
+                    <h3 id="modal-course-title" class="text-xl font-bold text-white mt-1">Título do Curso</h3>
+                </div>
+                <button onclick="closeCourseModal()" class="text-zinc-400 hover:text-white bg-zinc-800 hover:bg-zinc-700 p-2 rounded-xl transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <!-- Sistema Navegável de Abas (Harmonia dos 3 espaços) -->
+            <div class="bg-zinc-900/50 border-b border-zinc-800 flex px-6 gap-4">
+                <button id="tab-btn-cards" onclick="switchTab('cards')" class="py-3 px-2 font-medium text-sm border-b-2 border-purple-500 text-white transition-all">1. Pílulas (Cards)</button>
+                <button id="tab-btn-videos" onclick="switchTab('videos')" class="py-3 px-2 font-medium text-sm border-b-2 border-transparent text-zinc-400 hover:text-zinc-200 transition-all">2. Micro-Vídeos</button>
+                <button id="tab-btn-quiz" onclick="switchTab('quiz')" class="py-3 px-2 font-medium text-sm border-b-2 border-transparent text-zinc-400 hover:text-zinc-200 transition-all">3. Desafio (Quiz)</button>
+            </div>
+
+            <!-- Conteúdo Dinâmico das Abas -->
+            <div class="flex-1 overflow-y-auto p-6 bg-zinc-900/30">
+                
+                <!-- Aba 1: Grid de Cards de Conceito -->
+                <div id="tab-content-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+                <!-- Aba 2: Galeria de Mini Vídeos -->
+                <div id="tab-content-videos" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+                <!-- Aba 3: Espaço do Quiz Interativo -->
+                <div id="tab-content-quiz" class="hidden max-w-2xl mx-auto bg-zinc-800/30 border border-zinc-800 p-8 rounded-xl space-y-6"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
     <section id="contato" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
         <div class="max-w-xl mx-auto px-4">
             <div class="text-center mb-10">
@@ -313,44 +284,30 @@
                 <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <form name="contato" method="POST" data-netlify="true"
-                class="bg-zinc-800/50 p-8 rounded-2xl shadow-xl border border-zinc-700/50 space-y-5">
+            <form name="contato" method="POST" data-netlify="true" class="bg-zinc-800/50 p-8 rounded-2xl shadow-xl border border-zinc-700/50 space-y-5">
                 <input type="hidden" name="form-name" value="contato" />
-
                 <div>
                     <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Seu Nome</label>
-                    <input type="text" name="nome" required
-                        class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
+                    <input type="text" name="nome" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
                 </div>
-
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Seu
-                        E-mail</label>
-                    <input type="email" name="email" required
-                        class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Seu E-mail</label>
+                    <input type="email" name="email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
                 </div>
-
                 <div>
                     <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Mensagem</label>
-                    <textarea name="mensagem" rows="4" required
-                        class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all resize-none"></textarea>
+                    <textarea name="mensagem" rows="4" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all resize-none"></textarea>
                 </div>
-
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 rounded-xl shadow-md transition-all active:scale-95">
-                    Enviar Mensagem ⚡
-                </button>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 rounded-xl shadow-md transition-all active:scale-95">Enviar Mensagem ⚡</button>
             </form>
         </div>
     </section>
 
     <footer class="bg-zinc-950 border-t border-zinc-800 py-8">
-        <div
-            class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-300 font-medium gap-4">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-300 font-medium gap-4">
             <p>© 2026 Marcos.dev — Desenvolvido para Portfólio.</p>
             <div class="flex gap-6">
-                <a href="https://github.com/Petmarcos" target="_blank"
-                    class="hover:text-blue-400 transition-colors">GitHub</a>
+                <a href="https://github.com/Petmarcos" target="_blank" class="hover:text-blue-400 transition-colors">GitHub</a>
                 <a href="#" class="hover:text-blue-300 transition-colors">Voltar ao topo ↑</a>
             </div>
         </div>
@@ -359,168 +316,221 @@
 </body>
 
 <script>
-    // --- BANCO DE DADOS DINÂMICO DOS CARDS ---
-    const cardsJavaScript = [
+    // --- MODELO MULTI-CURSOS EXPANSÍVEL (DADOS DO HUB) ---
+    const coursesData = [
         {
-            id: 1,
-            badge: "Introdução",
-            titulo: "O que é JavaScript? 🤔",
-            conceito: "O JavaScript (JS) é a linguagem que dá vida à internet. Enquanto o HTML cria a estrutura e o CSS cuida do visual, o JS adiciona interatividade e comportamento em tempo real.",
-            codigo: `// HTML é o esqueleto\n// CSS é a roupa\n// JavaScript é o movimento real!`,
-            dica: "O clique do botão curtir mudar na hora é JS puro."
+            id: "js-piloto",
+            title: "JavaScript Essencial",
+            description: "Aprenda a sintaxe base e interatividades fundamentais da linguagem mais popular da web.",
+            badge: "JS Básico",
+            colorClass: "from-amber-500/20 to-purple-600/20",
+            borderHover: "hover:border-amber-500/50",
+            textColor: "text-amber-400",
+            cards: [
+                { id: 1, badge: "Intro", titulo: "O que é JavaScript? 🤔", conceito: "O JavaScript (JS) dá vida à internet. Controla interações e comportamentos nativos de forma assíncrona.", codigo: `console.log("Olá do JS!");`, dica: "Manipula o HTML e CSS dinamicamente." },
+                { id: 2, badge: "Memória", titulo: "Variáveis 📦", conceito: "Espaços nomeados na memória para guardar dados temporários com let ou const.", codigo: `const dev = "Marcos";\nlet escopo = true;`, dica: "Sempre dê preferência à atribuição estável com const." }
+            ],
+            videos: [
+                { title: "Instalando e Testando o Console", url: "https://www.youtube.com/embed/dQw4w9WgXcQ", duration: "2:40" },
+                { title: "Primeiros passos com Variáveis", url: "https://www.youtube.com/embed/dQw4w9WgXcQ", duration: "3:15" }
+            ],
+            quiz: {
+                question: "Qual palavra-chave criará uma variável cujo valor NUNCA mudará ao longo da execução?",
+                options: ["let", "var", "const", "function"],
+                correctIndex: 2
+            }
         },
         {
-            id: 2,
-            badge: "Memória",
-            titulo: "Variáveis 📦",
-            conceito: "Variáveis servem para guardar informações na memória do script. Hoje em dia, usamos 'let' para valores mutáveis e 'const' para valores estáticos.",
-            codigo: `const nome = "Marcos"; // Fixo\nlet idade = 25;\nidade = 26; // Valor atualizado!`,
-            dica: "Dê preferência ao const para um código limpo."
-        },
-        {
-            id: 3,
-            badge: "Tipos",
-            titulo: "Tipos de Dados 🗂️",
-            conceito: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos), Numbers (números inteiros/decimais) e Booleans (true/false).",
-            codigo: `let texto = "Olá mundo"; // String\nlet ano = 2026;         // Number\nlet ativo = true;       // Boolean`,
-            dica: "Lembre-se: \"20\" texto é diferente do número 20."
-        },
-        {
-            id: 4,
-            badge: "Matemática",
-            titulo: "Operadores Matemáticos ➕",
-            conceito: "Calculadora interna potente. Você possui os operadores básicos: Somar (+), Subtrair (-), Multiplicar (*) e Dividir (/). O símbolo '+' também une strings.",
-            codigo: `let preco = 50;\nlet frete = 10;\nlet total = preco + frete; // Retorna 60`,
-            dica: "Use parênteses para ditar regras de precedência."
-        },
-        {
-            id: 5,
-            badge: "Lógica",
-            titulo: "Condicionais 🚦",
-            conceito: "Fazer o código tomar decisões inteligentes. Utilizando blocos 'if' (se) e 'else' (senão), você valida regras estruturais do app.",
-            codigo: `let hora = 14;\nif (hora < 12) {\n  console.log("Bom dia");\n} else {\n  console.log("Boa tarde");\n}`,
-            dica: "As chaves { } agrupam o que roda em cada bloco."
-        },
-        {
-            id: 6,
-            badge: "Estrutura",
-            titulo: "Funções ⚙️",
-            conceito: "Blocos de código projetados para executar tarefas específicas. Você declara a lógica uma vez e a invoca dinamicamente quando precisar.",
-            codigo: `function saudar(user) {\n  return "Olá, " + user;\n}\nconsole.log(saudar("Marcos"));`,
-            dica: "Funções evitam códigos duplicados e confusos."
-        },
-        {
-            id: 7,
-            badge: "Listas",
-            titulo: "Arrays 🛒",
-            conceito: "Em vez de criar dezenas de variáveis avulsas, use os colchetes [ ] para criar uma lista de dados indexada sequencialmente.",
-            codigo: `let tags = ["React", "BaaS", "Git"];\n// O JS inicia a contagem no índice 0!\nconsole.log(tags[0]); // Saída: React`,
-            dica: "A propriedade .length mostra o tamanho total da lista."
-        },
-        {
-            id: 8,
-            badge: "Dados",
-            titulo: "Objetos 🚘",
-            conceito: "Objetos agrupam propriedades e características complexas mapeando conceitos complexos do mundo real direto para o código.",
-            codigo: `const dev = {\n  nome: "Marcos",\n  stack: "Front-end",\n  ano: 2026\n};\nconsole.log(dev.stack); // Front-end`,
-            dica: "Acesse as propriedades do objeto usando o ponto (.)."
-        },
-        {
-            id: 9,
-            badge: "Loops",
-            titulo: "Loops (Repetição) 🔄",
-            conceito: "Executar tarefas repetitivas automaticamente. O comando 'for' processa blocos iterativos com critérios de parada específicos.",
-            codigo: `for (let i = 0; i < 3; i++) {\n  console.log("Contagem: " + i);\n}`,
-            dica: "Loops são ideais para varrer listas de arrays."
-        },
-        {
-            id: 10,
-            badge: "DevTools",
-            titulo: "O Console do Navegador 🛠️",
-            conceito: "O console.log() é o melhor amigo de quem programa. Ele permite conversar e auditar o comportamento interno do script durante os testes.",
-            codigo: `// Aperte F12 no navegador\n// Vá para a aba 'Console'\nconsole.log("Testando script executado!");`,
-            dica: "Erros aparecem em vermelho no console. Leia-os!"
+            id: "tailwind-adv",
+            title: "Tailwind CSS Pro",
+            description: "Domine a estilização utilitária avançada para criar interfaces modernas com velocidade máxima.",
+            badge: "CSS Avançado",
+            colorClass: "from-cyan-500/20 to-blue-600/20",
+            borderHover: "hover:border-cyan-500/50",
+            textColor: "text-cyan-400",
+            cards: [
+                { id: 1, badge: "Design", titulo: "Utility-First Paradigm 🎨", conceito: "Em vez de escrever arquivos CSS gigantes, você adiciona classes pré-existentes direto no HTML.", codigo: `<div class="flex items-center gap-4 p-4 bg-zinc-800">`, dica: "Garante velocidade extrema no desenvolvimento." }
+            ],
+            videos: [
+                { title: "Configurando o Grid Perfeito", url: "https://www.youtube.com/embed/dQw4w9WgXcQ", duration: "3:50" }
+            ],
+            quiz: {
+                question: "Qual classe utilitária do Tailwind CSS ativa o modelo flexbox em um elemento contêiner?",
+                options: ["display-flex", "flex-row", "flex", "grid-flex"],
+                correctIndex: 2
+            }
         }
     ];
 
-    // --- FUNÇÃO PARA INJETAR OS CARDS ---
-    function carregarCardsMicrolearning() {
-        const container = document.getElementById('container-cards');
-        if (!container) return;
+    // --- RENDERIZAR VITRINE DE CURSOS ---
+    function renderCourseMarket() {
+        const grid = document.getElementById('course-market-grid');
+        if(!grid) return;
+        grid.innerHTML = '';
 
-        container.innerHTML = '';
-
-        cardsJavaScript.forEach(card => {
-            const cardHtml = `
-                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-purple-500/50 hover:shadow-purple-500/10 transition-all overflow-hidden flex flex-col">
-                    <div class="h-28 bg-gradient-to-br from-zinc-800 via-zinc-900 to-purple-950/40 p-5 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
-                        <div class="z-10">
-                            <span class="bg-purple-950/60 text-purple-400 text-[9px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">${card.badge}</span>
-                            <h4 class="text-white text-lg font-bold tracking-tight mt-1">${card.titulo}</h4>
-                        </div>
-                        <span class="text-5xl absolute -bottom-1 -right-2 opacity-10 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-40 transition-all pointer-events-none select-none">#${card.id}</span>
+        coursesData.forEach(course => {
+            grid.innerHTML += `
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg ${course.borderHover} transition-all overflow-hidden flex flex-col justify-between">
+                    <div class="p-6 bg-gradient-to-br ${course.colorClass} border-b border-zinc-700/50">
+                        <span class="${course.textColor} bg-zinc-900/60 text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-zinc-700 uppercase tracking-wider">${course.badge}</span>
+                        <h3 class="text-white text-xl font-bold mt-2 tracking-tight">${course.title}</h3>
+                        <p class="text-zinc-400 text-xs mt-2 leading-relaxed">${course.description}</p>
                     </div>
-
-                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                        <div>
-                            <p class="text-zinc-400 text-xs md:text-sm leading-relaxed">
-                                ${card.conceito}
-                            </p>
-                        </div>
-
-                        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3 overflow-x-auto border-l-2 border-l-purple-500">
-                            <pre class="text-[11px] font-mono text-emerald-400 leading-normal"><code>${card.codigo}</code></pre>
-                        </div>
-
-                        <div class="border-t border-zinc-700/50 pt-3 text-[11px] text-zinc-500 italic flex items-start gap-1">
-                            <span class="text-purple-400 select-none">💡</span>
-                            <span>${card.dica}</span>
-                        </div>
+                    <div class="p-6 bg-zinc-900/10 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">${course.cards.length} Pílulas | ${course.videos.length} Vídeos</span>
+                        <button onclick="openCourseModal('${course.id}')" class="bg-zinc-800 hover:bg-purple-600 text-white font-bold text-xs px-4 py-2 rounded-xl border border-zinc-700 hover:border-purple-500 transition-all">
+                            Acessar Espaço →
+                        </button>
                     </div>
                 </div>
             `;
-            container.innerHTML += cardHtml;
         });
     }
 
-    // Inicializa a renderização assim que o DOM carregar
-    window.addEventListener('DOMContentLoaded', carregarCardsMicrolearning);
+    // --- CONTROLE DO MODAL DO CURSO ---
+    let activeCourse = null;
 
+    function openCourseModal(courseId) {
+        activeCourse = coursesData.find(c => c.id === courseId);
+        if(!activeCourse) return;
 
-    // --- LÓGICA DO FORMULÁRIO NETLIFY ---
+        document.getElementById('modal-course-badge').innerText = activeCourse.badge;
+        document.getElementById('modal-course-title').innerText = activeCourse.title;
+
+        // Resetar para a primeira aba
+        switchTab('cards');
+
+        const modal = document.getElementById('course-study-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden'; // Trava rolagem do fundo
+    }
+
+    function closeCourseModal() {
+        const modal = document.getElementById('course-study-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    // --- NAVEGAÇÃO DE ABAS INTERNAS (CARDs / VÍDEOs / QUIZ) ---
+    function switchTab(tabName) {
+        const tabs = ['cards', 'videos', 'quiz'];
+        tabs.forEach(t => {
+            document.getElementById(`tab-content-${t}`).classList.add('hidden');
+            document.getElementById(`tab-btn-${t}`).classList.remove('border-purple-500', 'text-white');
+            document.getElementById(`tab-btn-${t}`).classList.add('border-transparent', 'text-zinc-400');
+        });
+
+        // Ativa Aba Escolhida
+        document.getElementById(`tab-content-${tabName}`).classList.remove('hidden');
+        document.getElementById(`tab-btn-${tabName}`).classList.add('border-purple-500', 'text-white');
+        document.getElementById(`tab-btn-${tabName}`).classList.remove('border-transparent', 'text-zinc-400');
+
+        // Carrega dados da aba específica
+        if(tabName === 'cards') renderTabCards();
+        if(tabName === 'videos') renderTabVideos();
+        if(tabName === 'quiz') renderTabQuiz();
+    }
+
+    // --- RENDERIZADORES DAS ABAS INTERNAS ---
+    function renderTabCards() {
+        const container = document.getElementById('tab-content-cards');
+        container.innerHTML = activeCourse.cards.map(card => `
+            <div class="bg-zinc-800/40 border border-zinc-800 rounded-xl p-5 flex flex-col justify-between space-y-4">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-purple-400 font-mono text-[10px] font-bold uppercase">${card.badge}</span>
+                        <span class="text-zinc-600 font-bold text-xs">#${card.id}</span>
+                    </div>
+                    <h4 class="text-white text-base font-bold mt-1">${card.titulo}</h4>
+                    <p class="text-zinc-400 text-xs mt-2 leading-relaxed">${card.conceito}</p>
+                </div>
+                <div class="bg-zinc-900 p-3 rounded-lg border border-zinc-800 border-l-2 border-l-purple-500">
+                    <pre class="text-[11px] text-emerald-400 font-mono"><code>${card.codigo}</code></pre>
+                </div>
+                <p class="text-[11px] text-zinc-500 italic">💡 ${card.dica}</p>
+            </div>
+        `).join('');
+    }
+
+    function renderTabVideos() {
+        const container = document.getElementById('tab-content-videos');
+        container.innerHTML = activeCourse.videos.map(vid => `
+            <div class="bg-zinc-800/40 border border-zinc-800 rounded-xl p-4 space-y-3">
+                <div class="aspect-video w-full rounded-lg overflow-hidden bg-zinc-950 border border-zinc-800">
+                    <iframe class="w-full h-full" src="${vid.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="flex justify-between items-center px-1">
+                    <h4 class="text-white text-sm font-semibold">${vid.title}</h4>
+                    <span class="text-[10px] font-mono bg-zinc-800 border border-zinc-700 px-2 py-0.5 rounded text-zinc-400">${vid.duration}</span>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderTabQuiz() {
+        const container = document.getElementById('tab-content-quiz');
+        const q = activeCourse.quiz;
+        
+        container.innerHTML = `
+            <div class="space-y-4">
+                <span class="text-purple-400 text-xs font-bold font-mono tracking-widest uppercase">Valide seu Conhecimento</span>
+                <h3 class="text-white text-lg font-bold">${q.question}</h3>
+            </div>
+            <div class="grid grid-cols-1 gap-3 mt-6">
+                ${q.options.map((opt, index) => `
+                    <button onclick="checkQuizAnswer(${index}, ${q.correctIndex}, this)" class="w-full text-left bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 p-4 rounded-xl text-sm transition-all text-zinc-300">
+                        ${opt}
+                    </button>
+                `).join('')}
+            </div>
+            <div id="quiz-feedback" class="mt-4 text-center text-sm font-semibold h-6"></div>
+        `;
+    }
+
+    function checkQuizAnswer(selectedIndex, correctIndex, buttonEl) {
+        const feedback = document.getElementById('quiz-feedback');
+        const parent = buttonEl.parentElement;
+        
+        // Bloqueia outros cliques após responder
+        Array.from(parent.children).forEach(btn => btn.disabled = true);
+
+        if(selectedIndex === correctIndex) {
+            buttonEl.className = "w-full text-left bg-emerald-950/40 border border-emerald-500 p-4 rounded-xl text-sm text-emerald-400 font-medium transition-all";
+            feedback.innerHTML = "✨ Resposta Correta! Excelente!";
+            feedback.className = "mt-4 text-center text-sm font-semibold text-emerald-400";
+        } else {
+            buttonEl.className = "w-full text-left bg-red-950/40 border border-red-500 p-4 rounded-xl text-sm text-red-400 font-medium transition-all";
+            feedback.innerHTML = "❌ Ops, resposta incorreta! Revise as pílulas.";
+            feedback.className = "mt-4 text-center text-sm font-semibold text-red-400";
+        }
+    }
+
+    // --- INICIALIZAÇÕES DE SISTEMA ANTERIORES ---
+    window.addEventListener('DOMContentLoaded', () => {
+        renderCourseMarket();
+    });
+
     document.querySelector('form[name="contato"]').addEventListener('submit', function (e) {
         e.preventDefault();
-
         const myForm = e.target;
         const formData = new FormData(myForm);
         formData.append("form-name", "contato");
-
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
         })
-            .then(() => {
-                window.location.href = "/sucesso.html";
-            })
-            .catch((error) => alert("Erro ao enviar mensagem: " + error));
+        .then(() => { window.location.href = "/sucesso.html"; })
+        .catch((error) => alert("Erro ao enviar mensagem: " + error));
     });
 
-
-    // --- LÓGICA DO MENU MOBILE ---
     const btnMenu = document.getElementById('btn-menu');
     const menuMobile = document.getElementById('menu-mobile');
     const linksMenu = document.querySelectorAll('.link-menu');
-
-    btnMenu.addEventListener('click', () => {
-        menuMobile.classList.toggle('hidden');
-    });
-
-    linksMenu.forEach(link => {
-        link.addEventListener('click', () => {
-            menuMobile.classList.add('hidden');
-        });
-    });
+    btnMenu.addEventListener('click', () => { menuMobile.classList.toggle('hidden'); });
+    linksMenu.forEach(link => { link.addEventListener('click', () => { menuMobile.classList.add('hidden'); }); });
 </script>
 
 </html>
