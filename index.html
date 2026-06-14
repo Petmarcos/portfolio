@@ -86,4 +86,452 @@
                 <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
             </div>
             <div class="bg-zinc-800/80 p-8 rounded-2xl shadow-xl border border-zinc-700/50 flex flex-col md:flex-row gap-8 items-center">
-                <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-900 flex-shrink-
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-900 flex-shrink-0 flex items-center justify-center overflow-hidden border border-zinc-700">
+                    <img src="./images/capi.png" alt="Mascote" class="w-full h-full object-contain p-2 brightness-110">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">Olá, eu sou o Marcos</h3>
+                    <p class="text-zinc-400 leading-relaxed text-sm md:text-base">
+                        Sou um desenvolvedor entusiasta em criar soluções digitais que unem design atraente e código sólido. Especializado em tecnologias modernas como JavaScript Vanilla, Tailwind CSS e integração com BaaS como o Supabase.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">HTML5 / CSS3</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Tailwind CSS</span>
+                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">JavaScript (ES6+)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Meus Projetos</h2>
+                <div class="h-1 w-12 bg-blue-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-blue-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">Capigenda</h4>
+                            <p class="text-blue-400 text-xs mt-1 font-medium">Productivity App</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-zinc-400 text-sm leading-relaxed">Sistema completo de agenda com autenticação de usuários e persistência de dados no Supabase.</p>
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://agendamapa.netlify.app/" target="_blank" class="text-sm font-bold text-blue-400 hover:text-blue-300">Abrir App 🚀</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="microlearning" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">Hub de Microlearning 🎓</h2>
+                <p class="text-zinc-400 text-sm mt-3 max-w-md mx-auto">Selecione o curso abaixo para abrir o painel interativo contendo os 3 espaços harmônicos: Pílulas, Vídeos e Quiz.</p>
+                <div class="h-1 w-12 bg-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div id="hub-courses-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+
+    <div id="study-panel-modal" class="fixed inset-0 z-50 hidden bg-zinc-950/95 backdrop-blur-md items-center justify-center p-2 sm:p-4">
+        <div class="bg-zinc-900 border border-zinc-800 w-full max-w-6xl h-[92vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+            
+            <div class="p-5 border-b border-zinc-800 bg-zinc-900/50 flex items-center justify-between">
+                <div>
+                    <span id="panel-course-badge" class="bg-purple-900/40 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-800/50 uppercase tracking-wider">JavaScript</span>
+                    <h3 id="panel-course-title" class="text-xl font-bold text-white mt-1">Nome do Curso</h3>
+                </div>
+                <button onclick="closeStudyPanel()" class="text-zinc-400 hover:text-white bg-zinc-800 hover:bg-zinc-700 p-2 rounded-xl transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <div class="bg-zinc-900 border-b border-zinc-800 flex px-6 overflow-x-auto gap-6 scrollbar-none">
+                <button id="tab-btn-cards" onclick="switchActiveTab('cards')" class="py-3 font-semibold text-sm border-b-2 border-purple-500 text-white transition-all whitespace-nowrap">💊 1. Pílulas de Conteúdo</button>
+                <button id="tab-btn-videos" onclick="switchActiveTab('videos')" class="py-3 font-semibold text-sm border-b-2 border-transparent text-zinc-400 hover:text-zinc-200 transition-all whitespace-nowrap">📹 2. Vídeos Curtos</button>
+                <button id="tab-btn-quiz" onclick="switchActiveTab('quiz')" class="py-3 font-semibold text-sm border-b-2 border-transparent text-zinc-400 hover:text-zinc-200 transition-all whitespace-nowrap">🧠 3. Desafio / Quiz</button>
+            </div>
+
+            <div class="flex-1 overflow-y-auto p-4 sm:p-8 bg-zinc-950/20">
+                
+                <div id="content-tab-cards" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    </div>
+
+                <div id="content-tab-videos" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    </div>
+
+                <div id="content-tab-quiz" class="hidden max-w-2xl mx-auto bg-zinc-800/30 border border-zinc-800 p-6 sm:p-8 rounded-2xl">
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="contato" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Fale Comigo</h2>
+                <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <form name="contato" method="POST" data-netlify="true" class="bg-zinc-800/50 p-8 rounded-2xl border border-zinc-700/50 space-y-5">
+                <input type="hidden" name="form-name" value="contato" />
+                <div>
+                    <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Seu Nome</label>
+                    <input type="text" name="nome" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-xl shadow-md">Enviar Mensagem ⚡</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    // BANCO DE DADOS DOS CURSOS ATUALIZADO (10 CARDS DE JS E 10 CARDS DE TAILWIND)
+    const microlearningCourses = [
+        {
+            id: "js-basico",
+            title: "Pílulas de JavaScript 💡",
+            subtitle: "Cards dinâmicos de microaprendizagem criados para iniciantes",
+            badge: "JavaScript",
+            description: "Aprenda a sintaxe base, escopos de memória, variáveis e tipos de dados interativos.",
+            coverGradient: "from-amber-500/20 via-purple-600/10 to-zinc-900",
+            cards: [
+                {
+                    id: "1",
+                    tag: "INTRODUÇÃO",
+                    title: "O que é JavaScript? 🤔",
+                    desc: "O JavaScript (JS) é a linguagem que dá vida à internet. Enquanto o HTML cria a estrutura e o CSS cuida do visual, o JS adiciona interatividade e comportamento em tempo real.",
+                    code: `// Ex 1: Alerta básico na tela\nalert("Bem-vindo ao meu portfólio!");\n\n// Ex 2: Mudando texto de um elemento HTML\ndocument.getElementById("status").innerText = "Online";\n\n// Ex 3: Ouvindo o clique de um botão\nbotao.addEventListener("click", executarAcao);`
+                },
+                {
+                    id: "2",
+                    tag: "MEMÓRIA",
+                    title: "Variáveis 📦",
+                    desc: "Variáveis servem para guardar informações na memória do script. Hoje em dia, usamos 'let' para valores mutáveis (que podem mudar) e 'const' para valores estáticos (fixos).",
+                    code: `// Ex 1: Constante (nunca muda)\nconst nomeCompleto = "Marcos Dev";\n\n// Ex 2: Let (pode mudar de valor)\nlet pontuacao = 100;\npontuacao = 150; // Atualizado!\n\n// Ex 3: Operação direta na atribuição\nlet total = pontuacao + 50;`
+                },
+                {
+                    id: "3",
+                    tag: "TIPOS",
+                    title: "Tipos de Dados 🗂️",
+                    desc: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos entre aspas), Numbers (números inteiros/decimais) e Booleans (verdadeiro ou falso).",
+                    code: `// Ex 1: String (Texto livre)\nlet profissao = "Desenvolvedor Front-End";\n\n// Ex 2: Number (Inteiro ou decimal)\nlet anoAtual = 2026;\nlet preco = 49.90;\n\n// Ex 3: Boolean (Verdadeiro ou Falso)\nlet usuarioLogado = true;`
+                },
+                {
+                    id: "4",
+                    tag: "CÁLCULOS",
+                    title: "Operadores Matemáticos ➕",
+                    desc: "O JavaScript realiza cálculos de forma nativa usando os operadores aritméticos tradicionais para somar, subtrair, multiplicar, dividir e descobrir o resto da divisão.",
+                    code: `// Ex 1: Soma e Subtração básicas\nlet soma = 10 + 5;     // Resultado: 15\nlet resto = 20 - 8;    // Resultado: 12\n\n// Ex 2: Multiplicação e Divisão\nlet dobro = 5 * 2;     // Resultado: 10\nlet metade = 10 / 2;   // Resultado: 5\n\n// Ex 3: Módulo (Resto da divisão)\nlet ehPar = 4 % 2;     // Resultado: 0 (Sem resto)`
+                },
+                {
+                    id: "5",
+                    tag: "DECISÕES",
+                    title: "Condicionais 🚦",
+                    desc: "Servem para criar caminhos e bifurcações lógicas no código. O bloco 'if' (se) testa uma condição verdadeira; caso contrário, o 'else' (senão) é ativado.",
+                    code: `// Ex 1: Estrutura básica Se/Senão\nif (idade >= 18) {\n  liberarAcesso();\n} else {\n  bloquearAcesso();\n}\n\n// Ex 2: Condicionais encadeadas (else if)\nif (hora < 12) {\n  print("Bom dia!");\n} else if (hora < 18) {\n  print("Boa tarde!");\n} else {\n  print("Boa noite!");\n}\n\n// Ex 3: Operador Lógico AND (&&)\nif (temIngresso && ehMaior) {\n  permitirEntrada();\n}`
+                },
+                {
+                    id: "6",
+                    tag: "FÁBRICAS",
+                    title: "Funções ⚙️",
+                    desc: "São blocos reutilizáveis de código projetados para executar uma tarefa específica. Elas podem receber dados de entrada (parâmetros) e devolver um resultado (retorno).",
+                    code: `// Ex 1: Função simples sem parâmetros\nfunction saudar() {\n  console.log("Olá, visitante!");\n}\n\n// Ex 2: Função com parâmetros de entrada\nfunction somar(a, b) {\n  return a + b;\n}\nlet resultado = somar(10, 20); // Retorna 30\n\n// Ex 3: Arrow Function moderna\nconst dobrar = (n) => n * 2;\nconsole.log(dobrar(8)); // Exibe 16`
+                },
+                {
+                    id: "7",
+                    tag: "COLEÇÕES",
+                    title: "Arrays (Listas) 🛒",
+                    desc: "Um Array é uma estrutura que permite armazenar uma lista ordenada de vários itens dentro de uma única variável, acessando-os através de índices numéricos (começando em 0).",
+                    code: `// Ex 1: Criando uma lista de compras\nconst tecnologia = ["HTML", "CSS", "JS"];\n\n// Ex 2: Acessando um item pelo índice (0 é o primeiro)\nconsole.log(tecnologia[0]); // Saída: "HTML"\n\n// Ex 3: Adicionando novos itens dinamicamente\ntecnologia.push("Tailwind"); // Insere no fim da lista`
+                },
+                {
+                    id: "8",
+                    tag: "ESTRUTURAS",
+                    title: "Objetos 🚘",
+                    desc: "Diferente das listas, os objetos modelam elementos do mundo real mapeando propriedades por chaves e valores. Eles guardam características completas de um único item.",
+                    code: `// Ex 1: Modelando um objeto estruturado\nconst carro = {\n  marca: "Fiat",\n  modelo: "Uno",\n  ano: 2010\n};\n\n// Ex 2: Acessando valores com a notação de ponto\nconsole.log(carro.modelo); // Saída: "Uno"\n\n// Ex 3: Adicionando novas propriedades ao objeto\ncarro.cor = "Escarlate";`
+                },
+                {
+                    id: "9",
+                    tag: "AUTOMAÇÃO",
+                    title: "Loops (Repetição) 🔄",
+                    desc: "Loops executam o mesmo bloco de código repetidas vezes até que uma condição de parada específica seja atingida. É a base da automação de dados.",
+                    code: `// Ex 1: Loop 'for' tradicional contando de 0 a 2\nfor (let i = 0; i < 3; i++) {\n  console.log("Número: " + i);\n}\n\n// Ex 2: Loop 'while' (enquanto a condição for real)\nlet energia = 3;\nwhile (energia > 0) {\n  energia--;\n}\n\n// Ex 3: Percorrendo um Array com forEach\nconst nomes = ["Ana", "Bia"];\nnomes.forEach(n => console.log(n));`
+                },
+                {
+                    id: "10",
+                    tag: "DEPURAÇÃO",
+                    title: "O Console 🛠️",
+                    desc: "O console do navegador é a ferramenta essencial do desenvolvedor para testar lógicas, verificar valores em tempo real e inspecionar erros no código sem interferir no design.",
+                    code: `// Ex 1: Mensagem comum de depuração\nconsole.log("O script foi carregado com sucesso!");\n\n// Ex 2: Alerta visual de erro controlado\nconsole.error("Falha ao conectar com o Supabase.");\n\n// Ex 3: Exibindo dados complexos em formato de tabela\nconst devs = [{nome: "Marcos"}, {nome: "Capi"}];\nconsole.table(devs);`
+                }
+            ],
+            videos: [
+                { title: "Variáveis na Prática (3min)", url: "https://www.youtube.com/embed/dQw4w9WgXcQ", duration: "03:15" },
+                { title: "Entendendo Tipos Dinâmicos", url: "https://www.youtube.com/embed/dQw4w9WgXcQ", duration: "02:45" }
+            ],
+            quiz: {
+                question: "Qual das opções abaixo altera o valor armazenado corretamente sem gerar erros de atribuição?",
+                options: ["Uma variável declarada com const", "Uma variável declarada com let", "Uma função estática", "Nenhuma das anteriores"],
+                correctIndex: 1
+            }
+        },
+        {
+            id: "tailwind-css",
+            title: "Pílulas de Tailwind CSS 🎨",
+            subtitle: "Aprenda estilização utilitária rápida e responsiva de forma visual",
+            badge: "Tailwind CSS",
+            description: "Domine classes utilitárias, cores, tipografia, espaçamentos e layouts responsivos diretamente no HTML.",
+            coverGradient: "from-cyan-500/20 via-blue-600/10 to-zinc-900",
+            cards: [
+                {
+                    id: "1",
+                    tag: "CONCEITO",
+                    title: "O que é Tailwind CSS? ⚡",
+                    desc: "É um framework CSS focado em classes utilitárias. Em vez de criar arquivos CSS separados e inventar nomes de classes, você estiliza seus elementos inserindo classes prontas direto nas tags HTML.",
+                    code: `\n<button class="bg-red-500 text-white">Sair</button>\n\n\n<h1 class="text-3xl text-center">Título</h1>\n\n\n<div class="rounded-xl shadow-lg">Conteúdo</div>`
+                },
+                {
+                    id: "2",
+                    tag: "CORES",
+                    title: "Sistema de Cores 🎨",
+                    desc: "O Tailwind possui uma paleta nativa robusta (zinc, red, blue, emerald, etc) com intensidades que vão de 50 (muito claro) a 950 (muito escuro), facilitando o controle de fundos, textos e bordas.",
+                    code: `\n<div class="bg-zinc-900">Fundo Escuro</div>\n\n\n<p class="text-blue-400">Texto Azul Cor-de-Céu</p>\n\n\n<input class="border border-emerald-500">`
+                },
+                {
+                    id: "3",
+                    tag: "ESPAÇOS",
+                    title: "Padding e Margin 📐",
+                    desc: "Controlar espaçamentos internos (Padding) e externos (Margin) é simples. Usamos 'p-' para padding, 'm-' para margin e especificamos direções como 'x' (horizontal) e 'y' (vertical).",
+                    code: `\n<div class="p-4">Espaço igual em todos os lados</div>\n\n\n<button class="px-6 py-2 mt-4">Botão Estilizado</button>\n\n\n<section class="m-8">Afastado de tudo</section>`
+                },
+                {
+                    id: "4",
+                    tag: "TEXTO",
+                    title: "Tipografia Estilizada 🔠",
+                    desc: "Gerencie o tamanho da fonte com 'text-*', o peso da linha com 'font-*' e o alinhamento de parágrafos facilmente, mantendo a consistência visual em toda a aplicação.",
+                    code: `\n<h2 class="text-2xl font-bold">Título Forte</h2>\n\n\n<p class="italic font-light">Subtítulo leve</p>\n\n\n<span class="text-right uppercase">Texto em caixa alta</span>`
+                },
+                {
+                    id: "5",
+                    tag: "DIMENSÕES",
+                    title: "Largura e Altura (Sizing) 📏",
+                    desc: "Defina tamanhos usando unidades proporcionais ('w-*' para largura e 'h-*' para altura) ou use frações matemáticas elegantes e valores absolutos como porcentagem da tela.",
+                    code: `\n<div class="w-32 h-32 bg-white">Quadrado Fixo</div>\n\n\n<div class="w-1/2">50% de largura</div>\n\n\n<footer class="w-full h-screen">Ocupa tela cheia</footer>`
+                },
+                {
+                    id: "6",
+                    tag: "LAYOUT",
+                    title: "Flexbox Prático ⛓️",
+                    desc: "Alinhar e distribuir blocos com Flexbox vira uma tarefa de uma linha só. Ative com 'flex', mude direções com 'flex-col' e controle o espaçamento entre filhos usando 'gap-*'.",
+                    code: `\n<div class="flex items-center justify-center">...</div>\n\n\n<div class="flex flex-col gap-3">...</div>\n\n\n<div class="flex flex-wrap gap-2">...</div>`
+                },
+                {
+                    id: "7",
+                    tag: "RESPONSIVO",
+                    title: "Breakpoints (Media Queries) 📱",
+                    desc: "Tornar um design responsivo não exige escrever CSS extra. Basta adicionar prefixos como 'md:' (tablets/telas médias) ou 'lg:' (computadores) antes da classe utilitária.",
+                    code: `\n<div class="bg-red-500 md:bg-blue-500">Tela Móvel/PC</div>\n\n\n<p class="text-sm md:text-xl">Fonte adaptável</p>\n\n\n<div class="flex flex-col md:flex-row">...</div>`
+                },
+                {
+                    id: "8",
+                    tag: "INTERAÇÃO",
+                    title: "Estados (Hover e Focus) ✨",
+                    desc: "Estilize efeitos de feedback visual instantâneos quando o usuário passa o mouse sobre um elemento ('hover:') ou quando clica em um campo de formulário ('focus:').",
+                    code: `\n<button class="bg-blue-600 hover:bg-blue-500">Enviar</button>\n\n\n<img class="transition-transform hover:scale-105">\n\n\n<input class="border focus:border-purple-500 text-white">`
+                },
+                {
+                    id: "9",
+                    tag: "GRID",
+                    title: "Grid CSS Poderoso 🗺️",
+                    desc: "Para criar layouts complexos em formato de grade ou colunas organizadas, ative o 'grid', defina a quantidade de colunas com 'grid-cols-*' e defina o espaçamento ideal.",
+                    code: `\n<div class="grid grid-cols-3 gap-4">...</div>\n\n\n<div class="grid grid-cols-1 md:grid-cols-2">...</div>\n\n\n<div class="col-span-2 bg-zinc-800">Card Largo</div>`
+                },
+                {
+                    id: "10",
+                    tag: "REFINAMENTO",
+                    title: "Bordas, Sombras e Efeitos 🌗",
+                    desc: "Dê o acabamento profissional para sua interface controlando a opacidade de elementos, adicionando sombras profundas ('shadow-*') e suavizando cantos de caixas.",
+                    code: `\n<div class="rounded-2xl">Bordas suaves</div>\n\n\n<div class="shadow-2xl shadow-purple-500/10">Card flutuante</div>\n\n\n<div class="opacity-80 hover:opacity-100">Elemento discreto</div>`
+                }
+            ],
+            videos: [
+                { title: "Criando Grids Responsivos", url: "https://www.youtube.com/embed/dQw4w9WgXcQ", duration: "04:10" }
+            ],
+            quiz: {
+                question: "Qual classe utilitária do Tailwind CSS é usada para aplicar display flex?",
+                options: ["display-flex", "flex-row", "flex", "d-flex"],
+                correctIndex: 2
+            }
+        }
+    ];
+
+    // RENDERIZAR A VITRINE DE CURSOS NA PÁGINA
+    function initHub() {
+        const container = document.getElementById('hub-courses-grid');
+        if (!container) return;
+        container.innerHTML = '';
+
+        microlearningCourses.forEach(course => {
+            container.innerHTML += `
+                <div class="bg-zinc-800/40 rounded-2xl border border-zinc-800 hover:border-purple-500/50 transition-all p-6 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-widest bg-purple-950/50 px-2.5 py-1 rounded-md border border-purple-900/30">${course.badge}</span>
+                        <h3 class="text-xl font-bold text-white mt-4 group-hover:text-purple-400 transition-colors">${course.title.replace(' 💡', '')}</h3>
+                        <p class="text-zinc-400 text-sm mt-2 leading-relaxed">${course.description}</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">${course.cards.length} Pílulas • ${course.videos.length} Vídeos</span>
+                        <button onclick="openStudyPanel('${course.id}')" class="bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all">
+                            Abrir Espaço →
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    let selectedCourse = null;
+
+    // ABRIR O PAINEL DE ESTUDOS
+    function openStudyPanel(courseId) {
+        selectedCourse = microlearningCourses.find(c => c.id === courseId);
+        if (!selectedCourse) return;
+
+        document.getElementById('panel-course-badge').innerText = selectedCourse.badge;
+        document.getElementById('panel-course-title').innerText = selectedCourse.title;
+
+        // Resetar para a primeira aba (Cards)
+        switchActiveTab('cards');
+
+        const modal = document.getElementById('study-panel-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeStudyPanel() {
+        const modal = document.getElementById('study-panel-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    // ALTERNAR AS ABAS DE CONTEÚDO (OS 3 ESPAÇOS HARMÔNICOS)
+    function switchActiveTab(tab) {
+        const tabList = ['cards', 'videos', 'quiz'];
+        
+        tabList.forEach(t => {
+            document.getElementById(`content-tab-${t}`).classList.add('hidden');
+            document.getElementById(`tab-btn-${t}`).classList.remove('border-purple-500', 'text-white');
+            document.getElementById(`tab-btn-${t}`).classList.add('border-transparent', 'text-zinc-400');
+        });
+
+        document.getElementById(`content-tab-${tab}`).classList.remove('hidden');
+        document.getElementById(`tab-btn-${tab}`).classList.add('border-purple-500', 'text-white');
+        document.getElementById(`tab-btn-${tab}`).classList.remove('border-transparent', 'text-zinc-400');
+
+        if (tab === 'cards') renderCardsSpace();
+        if (tab === 'videos') renderVideosSpace();
+        if (tab === 'quiz') renderQuizSpace();
+    }
+
+    // RENDERS DOS TRÊS ESPAÇOS
+    function renderCardsSpace() {
+        const container = document.getElementById('content-tab-cards');
+        container.innerHTML = selectedCourse.cards.map(card => `
+            <div class="bg-zinc-900/60 border border-zinc-800 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between group min-h-[340px] shadow-lg">
+                <span class="absolute right-4 top-16 text-6xl font-black text-zinc-800/20 select-none pointer-events-none group-hover:text-purple-500/10 transition-colors">#${card.id}</span>
+                
+                <div class="relative z-10">
+                    <span class="text-[10px] font-bold text-purple-400 tracking-widest bg-purple-950/40 px-2 py-0.5 rounded border border-purple-900/30 uppercase">${card.tag}</span>
+                    <h4 class="text-lg font-bold text-white mt-3">${card.title}</h4>
+                    <p class="text-zinc-400 text-xs mt-3 leading-relaxed font-medium">${card.desc}</p>
+                </div>
+                
+                <div class="bg-[#121214] p-4 rounded-xl border border-zinc-800/80 mt-5">
+                    <pre class="text-xs text-emerald-400 font-mono overflow-x-auto"><code>${card.code}</code></pre>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderVideosSpace() {
+        const container = document.getElementById('content-tab-videos');
+        if (selectedCourse.videos.length === 0) {
+            container.innerHTML = `<p class="text-zinc-500 text-sm col-span-3 text-center py-8">Nenhum micro-vídeo adicionado para este curso ainda.</p>`;
+            return;
+        }
+        container.innerHTML = selectedCourse.videos.map(vid => `
+            <div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-4 space-y-3">
+                <div class="aspect-video w-full rounded-xl overflow-hidden bg-black border border-zinc-800">
+                    <iframe class="w-full h-full" src="${vid.url}" title="Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="flex justify-between items-center px-1">
+                    <h4 class="text-white text-sm font-semibold truncate">${vid.title}</h4>
+                    <span class="text-[10px] font-mono bg-zinc-800 border border-zinc-700 px-2 py-0.5 rounded text-zinc-400">${vid.duration}</span>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderQuizSpace() {
+        const container = document.getElementById('content-tab-quiz');
+        const q = selectedCourse.quiz;
+        
+        container.innerHTML = `
+            <div class="space-y-3">
+                <span class="text-purple-400 text-xs font-bold font-mono uppercase tracking-widest">Validar Conhecimento</span>
+                <h3 class="text-white text-lg font-bold leading-snug">${q.question}</h3>
+            </div>
+            <div class="grid grid-cols-1 gap-3 mt-6">
+                ${q.options.map((opt, index) => `
+                    <button onclick="evaluateAnswer(${index}, ${q.correctIndex}, this)" class="w-full text-left bg-zinc-900 hover:bg-zinc-800/80 border border-zinc-800 p-4 rounded-xl text-xs sm:text-sm text-zinc-300 transition-all font-medium">
+                        ${opt}
+                    </button>
+                `).join('')}
+            </div>
+            <div id="quiz-result-feedback" class="mt-5 text-center text-sm font-bold h-6"></div>
+        `;
+    }
+
+    function evaluateAnswer(selected, correct, element) {
+        const feedback = document.getElementById('quiz-result-feedback');
+        const optionsContainer = element.parentElement;
+        
+        Array.from(optionsContainer.children).forEach(btn => btn.disabled = true);
+
+        if (selected === correct) {
+            element.className = "w-full text-left bg-emerald-950/40 border border-emerald-500 p-4 rounded-xl text-sm text-emerald-400 font-semibold";
+            feedback.innerHTML = "✨ Resposta Correta! Você dominou essa pílula!";
+            feedback.className = "mt-5 text-center text-sm font-bold text-emerald-400";
+        } else {
+            element.className = "w-full text-left bg-red-950/40 border border-red-500 p-4 rounded-xl text-sm text-red-400 font-semibold";
+            feedback.innerHTML = "❌ Resposta Incorreta! Dê uma olhada na aba de Pílulas novamente.";
+            feedback.className = "mt-5 text-center text-sm font-bold text-red-400";
+        }
+    }
+
+    // Inicialização ao carregar a página
+    window.addEventListener('DOMContentLoaded', () => {
+        initHub();
+    });
+
+    // Código do Menu Mobile
+    const btnMenu = document.getElementById('btn-menu');
+    const menuMobile = document.getElementById('menu-mobile');
+    btnMenu.addEventListener('click', () => { menuMobile.classList.toggle('hidden'); });
+</script>
+
+</html>
