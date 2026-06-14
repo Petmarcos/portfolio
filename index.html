@@ -19,7 +19,6 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Animação suave para a entrada dos cards filtrados no Pop-up */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -35,7 +34,6 @@
             animation: fadeIn 0.35s ease-out forwards;
         }
 
-        /* Customização da barra de rolagem interna do Pop-up */
         .custom-scroll::-webkit-scrollbar {
             width: 6px;
         }
@@ -98,12 +96,8 @@
                 Desenvolvedor front-end focado em criar experiências interativas excelentes, código limpo e soluções inteligentes com banco de dados em tempo real.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-                <a href="#projetos" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition-all active:scale-95 text-center">
-                    Ver Meus Projetos
-                </a>
-                <a href="#sobre" class="w-full sm:w-auto border border-zinc-700 hover:bg-zinc-800 text-zinc-300 font-semibold px-8 py-3 rounded-xl transition-all active:scale-95 text-center">
-                    Conhecer Mais
-                </a>
+                <a href="#projetos" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition-all active:scale-95 text-center">Ver Meus Projetos</a>
+                <a href="#sobre" class="w-full sm:w-auto border border-zinc-700 hover:bg-zinc-800 text-zinc-300 font-semibold px-8 py-3 rounded-xl transition-all active:scale-95 text-center">Conhecer Mais</a>
             </div>
         </div>
     </section>
@@ -123,13 +117,6 @@
                     <p class="text-zinc-400 leading-relaxed text-sm md:text-base">
                         Sou um desenvolvedor entusiasta em criar soluções digitais que unem design atraente e código sólido. Especializado em tecnologias modernas como JavaScript Vanilla, Tailwind CSS e integração com BaaS como o Supabase. Meu objetivo é transformar ideias em aplicações publicadas, performáticas e focadas na experiência do usuário.
                     </p>
-                    <div class="flex flex-wrap gap-2 mt-5">
-                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">HTML5 / CSS3</span>
-                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Tailwind CSS</span>
-                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">JavaScript (ES6+)</span>
-                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Supabase / Postgres</span>
-                        <span class="bg-zinc-900 text-zinc-300 text-xs font-semibold px-3 py-1 rounded-lg border border-zinc-700">Git & GitHub</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -139,92 +126,23 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-white tracking-tight">Meus Projetos</h2>
-                <p class="text-zinc-200 text-sm mt-2">Aplicações reais desenvolvidas e publicadas</p>
                 <div class="h-1 w-12 bg-blue-500 mx-auto mt-3 rounded-full"></div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-blue-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
-                        <div class="z-10">
-                            <h4 class="text-white text-2xl font-black tracking-tight">Capigenda</h4>
-                            <p class="text-blue-400 text-xs mt-1 font-medium">Productivity App</p>
-                        </div>
-                        <img src="./images/capi.png" alt="Capivara" class="w-24 h-24 object-contain absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex gap-2 mb-4 flex-wrap">
-                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">Tailwind</span>
-                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">JS Vanilla</span>
-                                <span class="bg-emerald-950/40 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Supabase</span>
-                            </div>
-                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Agenda Pessoal Segura</h3>
-                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                                Sistema completo de agenda com autenticação de usuários, segurança RLS, persistência no banco e controle de status em tempo real.
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-                            <a href="https://agendamapa.netlify.app/" target="_blank" class="text-sm font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
-                            <a href="https://github.com/Petmarcos/capigenda" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-zinc-800/40 p-6 rounded-2xl border border-zinc-700/50">
+                    <h4 class="text-white text-lg font-bold">Capigenda</h4>
+                    <p class="text-zinc-400 text-xs mt-2">Sistema completo de agenda integrada com autenticação Supabase.</p>
+                    <a href="https://agendamapa.netlify.app/" target="_blank" class="text-blue-400 text-xs font-bold block mt-4">Abrir App 🚀</a>
                 </div>
-
-                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-cyan-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
-                        <div class="z-10">
-                            <h4 class="text-white text-2xl font-black tracking-tight">MathManager</h4>
-                            <p class="text-cyan-400 text-xs mt-1 font-medium">Educational Tool</p>
-                        </div>
-                        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📐</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex gap-2 mb-4 flex-wrap">
-                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
-                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
-                                <span class="bg-orange-950/40 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded border border-orange-900/30 uppercase tracking-wider">Firebase</span>
-                                <span class="bg-purple-950/40 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">Clean Code</span>
-                            </div>
-                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Gerador Inteligente de Exercícios</h3>
-                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                                Plataforma Full Stack multiusuário para professores. Cria listas de exercícios personalizadas com lógicas e enunciados contextuais dinâmicos em tempo real.
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-                            <a href="https://math-manager.vercel.app/" target="_blank" class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
-                            <a href="https://github.com/Petmarcos/math-manager" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
-                        </div>
-                    </div>
+                <div class="bg-zinc-800/40 p-6 rounded-2xl border border-zinc-700/50">
+                    <h4 class="text-white text-lg font-bold">MathManager</h4>
+                    <p class="text-zinc-400 text-xs mt-2">Gerador Full Stack de listas de exercícios para professores.</p>
+                    <a href="https://math-manager.vercel.app/" target="_blank" class="text-cyan-400 text-xs font-bold block mt-4">Abrir App 🚀</a>
                 </div>
-
-                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
-                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-emerald-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
-                        <div class="z-10">
-                            <h4 class="text-white text-2xl font-black tracking-tight">Capivara Learning</h4>
-                            <p class="text-emerald-400 text-xs mt-1 font-medium">Auditoria Acadêmica</p>
-                        </div>
-                        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📜</span>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex gap-2 mb-4 flex-wrap">
-                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
-                                <span class="bg-teal-950/40 text-teal-400 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-900/30 uppercase tracking-wider">FastAPI</span>
-                                <span class="bg-green-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Python</span>
-                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
-                            </div>
-                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Validador Inteligente de Diplomas</h3>
-                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
-                                Ecossistema Full Stack para automação de registros acadêmicos. Realiza o cruzamento inteligente de dados e-MEC para validação de turmas e emissão de prévias de documentos.
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
-                            <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank" class="text-sm font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
-                            <a href="https://github.com/Petmarcos/NOME-DO-REPOSITORIO" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
-                        </div>
-                    </div>
+                <div class="bg-zinc-800/40 p-6 rounded-2xl border border-zinc-700/50">
+                    <h4 class="text-white text-lg font-bold">Capivara Learning</h4>
+                    <p class="text-zinc-400 text-xs mt-2">Validador de históricos e auditoria automatizada de diplomas e-MEC.</p>
+                    <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank" class="text-emerald-400 text-xs font-bold block mt-4">Abrir App 🚀</a>
                 </div>
             </div>
         </div>
@@ -233,259 +151,103 @@
     <section id="microlearning" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white tracking-tight">Hub de Microaprendizagem 💡</h2>
-                <p class="text-zinc-400 text-sm mt-2">Escolha o formato ideal para acelerar seus estudos dev</p>
+                <h2 class="text-3xl font-bold text-white tracking-tight">Microaprendizagem 💡</h2>
+                <p class="text-zinc-400 text-sm mt-2">Acesse conteúdos estruturados em formatos rápidos e dinâmicos</p>
                 <div class="h-1 w-12 bg-purple-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <button onclick="abrirPopupJS()" class="group text-left block bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/10 transition-all duration-300 overflow-hidden focus:outline-none">
-                    <div class="h-32 bg-gradient-to-br from-zinc-800 via-zinc-900 to-purple-950/40 p-5 relative overflow-hidden border-b border-zinc-700/50">
-                        <span class="bg-purple-950/40 text-purple-400 text-[9px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">Pílulas de Código</span>
-                        <h3 class="text-white text-lg font-bold tracking-tight mt-2">JavaScript Básico</h3>
-                        <span class="text-6xl absolute -bottom-3 -right-2 opacity-10 group-hover:opacity-40 group-hover:scale-110 transition-all select-none">🟨</span>
+            <div class="max-w-md mx-auto">
+                <button onclick="abrirTrilha('JavaScript')" class="group text-left block w-full bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/10 transition-all duration-300 overflow-hidden focus:outline-none">
+                    <div class="h-40 bg-gradient-to-br from-zinc-800 via-zinc-900 to-purple-950/50 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <span class="bg-purple-950/40 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">Trilha Completa</span>
+                            <h3 class="text-white text-2xl font-black tracking-tight mt-2">JavaScript</h3>
+                            <p class="text-zinc-400 text-xs mt-1 font-medium">Pílulas, Vídeos, Quadrinhos e Quiz ativos</p>
+                        </div>
+                        <span class="text-8xl absolute -bottom-4 -right-4 opacity-15 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-60 transition-all pointer-events-none select-none">🟨</span>
                     </div>
-                    <div class="p-4 flex items-center justify-between bg-zinc-800/20 text-xs font-semibold text-purple-400 group-hover:text-purple-300">
-                        <span>10 pílulas interativas</span>
-                        <span>Explorar →</span>
+                    <div class="p-5 flex items-center justify-between bg-zinc-800/20 group-hover:bg-purple-950/20 transition-colors">
+                        <span class="text-xs font-semibold text-zinc-400 group-hover:text-purple-300 transition-colors">Explorar ecossistema de estudos</span>
+                        <span class="text-sm font-bold text-purple-400 group-hover:translate-x-1 transition-transform block">Abrir Conteúdos →</span>
                     </div>
                 </button>
-
-                <div class="group bg-zinc-800/20 rounded-2xl border border-zinc-800/50 shadow-md overflow-hidden opacity-60 relative">
-                    <div class="h-32 p-5 flex flex-col justify-between">
-                        <div>
-                            <span class="bg-zinc-800 text-zinc-500 text-[9px] font-bold px-2 py-0.5 rounded border border-zinc-700 uppercase tracking-wider">Vídeos Curtos</span>
-                            <h3 class="text-zinc-400 text-lg font-bold tracking-tight mt-2">Dicas de 1 Minuto</h3>
-                        </div>
-                        <span class="text-5xl absolute -bottom-2 -right-2 opacity-5 select-none">🎥</span>
-                    </div>
-                    <div class="p-4 bg-zinc-950/20 border-t border-zinc-800/50 text-[11px] text-zinc-500 font-medium">
-                        Em breve na plataforma
-                    </div>
-                </div>
-
-                <div class="group bg-zinc-800/20 rounded-2xl border border-zinc-800/50 shadow-md overflow-hidden opacity-60 relative">
-                    <div class="h-32 p-5 flex flex-col justify-between">
-                        <div>
-                            <span class="bg-zinc-800 text-zinc-500 text-[9px] font-bold px-2 py-0.5 rounded border border-zinc-700 uppercase tracking-wider">Quadrinhos</span>
-                            <h3 class="text-zinc-400 text-lg font-bold tracking-tight mt-2">Lógica Ilustrada</h3>
-                        </div>
-                        <span class="text-5xl absolute -bottom-2 -right-2 opacity-5 select-none">💬</span>
-                    </div>
-                    <div class="p-4 bg-zinc-950/20 border-t border-zinc-800/50 text-[11px] text-zinc-500 font-medium">
-                        Em breve na plataforma
-                    </div>
-                </div>
-
-                <div class="group bg-zinc-800/20 rounded-2xl border border-zinc-800/50 shadow-md overflow-hidden opacity-60 relative">
-                    <div class="h-32 p-5 flex flex-col justify-between">
-                        <div>
-                            <span class="bg-zinc-800 text-zinc-500 text-[9px] font-bold px-2 py-0.5 rounded border border-zinc-700 uppercase tracking-wider">Quiz</span>
-                            <h3 class="text-zinc-400 text-lg font-bold tracking-tight mt-2">Desafios de Fixação</h3>
-                        </div>
-                        <span class="text-5xl absolute -bottom-2 -right-2 opacity-5 select-none">🏆</span>
-                    </div>
-                    <div class="p-4 bg-zinc-950/20 border-t border-zinc-800/50 text-[11px] text-zinc-500 font-medium">
-                        Em breve na plataforma
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <div id="popup-javascript" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-zinc-950/80 backdrop-blur-md">
+    <div id="popup-trilha" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-zinc-950/80 backdrop-blur-md">
         <div class="bg-zinc-900 border border-zinc-800 w-full max-w-6xl h-[85vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-fade-in">
             
-            <div class="bg-zinc-950 px-6 py-4 border-b border-zinc-800 flex items-center justify-between">
+            <div class="bg-zinc-950 px-6 py-4 border-b border-zinc-800 flex items-center justify-between flex-shrink-0">
                 <div>
-                    <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest">Microaprendizagem</span>
-                    <h2 class="text-lg md:text-xl font-bold text-white mt-0.5">Pílulas de JavaScript 🟨</h2>
+                    <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest">Microlearning Hub</span>
+                    <h2 id="popup-titulo-trilha" class="text-lg font-bold text-white mt-0.5">Trilha JavaScript</h2>
                 </div>
-                <button onclick="fecharPopupJS()" class="text-zinc-400 hover:text-white bg-zinc-800 hover:bg-zinc-700 p-2 rounded-xl border border-zinc-700 text-xs font-semibold px-4 transition-all">
+                <button onclick="fecharTrilha()" class="text-zinc-400 hover:text-white bg-zinc-800 hover:bg-zinc-700 p-2 rounded-xl border border-zinc-700 text-xs font-semibold px-4 transition-all">
                     Fechar Janela ✕
                 </button>
             </div>
 
-            <div class="flex-1 overflow-y-auto p-6 custom-scroll">
-                <div class="flex flex-wrap justify-center gap-2 mb-8" id="container-filtros"></div>
+            <div class="bg-zinc-950/60 px-6 py-2 border-b border-zinc-800 flex gap-2 overflow-x-auto flex-shrink-0 custom-scroll">
+                <button id="aba-pilulas" onclick="mudarAbaPrincipal('pilulas')" class="text-xs font-bold px-4 py-2 rounded-xl border border-purple-500 bg-purple-600 text-white transition-all">Pílulas</button>
+                <button id="aba-videos" onclick="mudarAbaPrincipal('videos')" class="text-xs font-semibold px-4 py-2 rounded-xl border border-zinc-700 bg-zinc-800 text-zinc-400 hover:text-white transition-all">Vídeos Curtos</button>
+                <button id="aba-quadrinhos" onclick="mudarAbaPrincipal('quadrinhos')" class="text-xs font-semibold px-4 py-2 rounded-xl border border-zinc-700 bg-zinc-800 text-zinc-400 hover:text-white transition-all">Quadrinhos</button>
+                <button id="aba-quiz" onclick="mudarAbaPrincipal('quiz')" class="text-xs font-semibold px-4 py-2 rounded-xl border border-zinc-700 bg-zinc-800 text-zinc-400 hover:text-white transition-all">Quiz</button>
+            </div>
 
-                <div id="container-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            <div class="flex-1 overflow-y-auto p-6 custom-scroll bg-zinc-900/40">
+                <div id="subfiltros-container" class="flex flex-wrap justify-start gap-2 mb-6 animate-fade-in"></div>
+
+                <div id="grid-conteudo-trilha" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
             </div>
         </div>
     </div>
 
-    <section id="contato" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
-        <div class="max-w-xl mx-auto px-4">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-white tracking-tight">Fale Comigo</h2>
-                <p class="text-zinc-200 text-sm mt-2">Vamos conversar sobre oportunidades ou trocar experiências!</p>
-                <div class="h-1 w-12 bg-red-500 mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <form name="contato" method="POST" data-netlify="true" class="bg-zinc-800/50 p-8 rounded-2xl shadow-xl border border-zinc-700/50 space-y-5">
-                <input type="hidden" name="form-name" value="contato" />
-
-                <div>
-                    <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Seu Nome</label>
-                    <input type="text" name="nome" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Seu E-mail</label>
-                    <input type="email" name="email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Mensagem</label>
-                    <textarea name="mensagem" rows="4" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 focus:bg-zinc-900/50 transition-all resize-none"></textarea>
-                </div>
-
-                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 rounded-xl shadow-md transition-all active:scale-95">
-                    Enviar Mensagem ⚡
-                </button>
-            </form>
+    <section id="contato" class="py-20 border-t border-zinc-800">
+        <div class="max-w-xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white">Fale Comigo</h2>
+            <p class="text-zinc-400 text-xs mt-2">Disponível para freelancers e propostas de tecnologia.</p>
         </div>
     </section>
-
-    <footer class="bg-zinc-950 border-t border-zinc-800 py-8">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-300 font-medium gap-4">
-            <p>© 2026 Marcos.dev — Desenvolvido para Portfólio.</p>
-            <div class="flex gap-6">
-                <a href="https://github.com/Petmarcos" target="_blank" class="hover:text-blue-400 transition-colors">GitHub</a>
-                <a href="#" class="hover:text-blue-300 transition-colors">Voltar ao topo ↑</a>
-            </div>
-        </div>
-    </footer>
 
 </body>
 
 <script>
-    // --- DATA ARRAY DAS PÍLULAS DE JAVASCRIPT ---
+    // --- BANCO DE DADOS INTEGRADO (TODAS AS SEÇÕES) ---
     const cardsJavaScript = [
-        { id: 1, badge: "Introdução", titulo: "O que é JavaScript? 🤔", conceito: "O JavaScript (JS) é a linguagem que dá vida à internet. Enquanto o HTML cria a estrutura e o CSS cuida do visual, o JS adiciona interatividade e comportamento em tempo real.", codigo: `// HTML é o esqueleto\n// CSS é a roupa\n// JavaScript é o movimento real!`, dica: "O clique do botão curtir mudar na hora é JS puro." },
+        { id: 1, badge: "Introdução", titulo: "O que é JavaScript? 🤔", conceito: "O JavaScript (JS) é a linguagem que dá vida à internet. Enquanto o HTML cria a estrutura e o CSS cuida do visual, o JS adiciona interatividade.", codigo: `// HTML é o esqueleto\n// CSS é a roupa\n// JavaScript é o movimento real!`, dica: "O clique do botão curtir mudar na hora é JS puro." },
         { id: 2, badge: "Memória", titulo: "Variáveis 📦", conceito: "Variáveis servem para guardar informações na memória do script. Hoje em dia, usamos 'let' para valores mutáveis e 'const' para valores estáticos.", codigo: `const nome = "Marcos"; // Fixo\nlet idade = 25;\nidade = 26; // Valor atualizado!`, dica: "Dê preferência ao const para um código limpo." },
-        { id: 3, badge: "Tipos", titulo: "Tipos de Dados 🗂️", conceito: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos), Numbers (números inteiros/decimais) e Booleans (true/false).", codigo: `let texto = "Olá mundo"; // String\nlet ano = 2026;         // Number\nlet ativo = true;       // Boolean`, dica: "Lembre-se: \"20\" texto é diferente do número 20." },
-        { id: 4, badge: "Matemática", titulo: "Operadores Matemáticos ➕", conceito: "Calculadora interna potente. Você possui os operadores básicos: Somar (+), Subtrair (-), Multiplicar (*) e Dividir (/). O símbolo '+' também une strings.", codigo: `let preco = 50;\nlet frete = 10;\nlet total = preco + frete; // Retorna 60`, dica: "Use parênteses para ditar regras de precedência." },
+        { id: 3, badge: "Tipos", titulo: "Tipos de Dados 🗂️", conceito: "O JS precisa saber com que tipo de dado está lidando. Os três pilares iniciais são: Strings (textos), Numbers (números) e Booleans (true/false).", codigo: `let texto = "Olá mundo"; // String\nlet ano = 2026;         // Number\nlet ativo = true;       // Boolean`, dica: "Lembre-se: \"20\" texto é diferente do número 20." },
+        { id: 4, badge: "Matemática", titulo: "Operadores Matemáticos ➕", conceito: "Calculadora interna potente. Você possui os operadores básicos: Somar (+), Subtrair (-), Multiplicar (*) e Dividir (/).", codigo: `let preco = 50;\nlet frete = 10;\nlet total = preco + frete; // Retorna 60`, dica: "Use parênteses para ditar regras de precedência." },
         { id: 5, badge: "Lógica", titulo: "Condicionais 🚦", conceito: "Fazer o código tomar decisões inteligentes. Utilizando blocos 'if' (se) e 'else' (senão), você valida regras estruturais do app.", codigo: `let hora = 14;\nif (hora < 12) {\n  console.log("Bom dia");\n} else {\n  console.log("Boa tarde");\n}`, dica: "As chaves { } agrupam o que roda em cada bloco." },
-        { id: 6, badge: "Estrutura", titulo: "Funções ⚙️", conceito: "Blocos de código projetados para executar tarefas específicas. Você declara a lógica uma vez e a invoca dinamicamente quando precisar.", codigo: `function saudar(user) {\n  return "Olá, " + user;\n}\nconsole.log(saudar("Marcos"));`, dica: "Funções evitam códigos duplicados e confusos." },
-        { id: 7, badge: "Listas", titulo: "Arrays 🛒", conceito: "Em vez de criar dezenas de variáveis avulsas, use os colchetes [ ] para criar uma lista de dados indexada sequencialmente.", codigo: `let tags = ["React", "BaaS", "Git"];\n// O JS inicia a contagem no índice 0!\nconsole.log(tags[0]); // Saída: React`, dica: "A propriedade .length mostra o tamanho total da lista." },
-        { id: 8, badge: "Dados", titulo: "Objetos 🚘", conceito: "Objetos agrupam propriedades e características complexas mapeando conceitos complexos do mundo real direto para o código.", codigo: `const dev = {\n  nome: "Marcos",\n  stack: "Front-end",\n  ano: 2026\n};\nconsole.log(dev.stack); // Front-end`, dica: "Acesse as propriedades do objeto usando o ponto (.)." },
-        { id: 9, badge: "Loops", titulo: "Loops (Repetição) 🔄", conceito: "Executar tarefas repetitivas automaticamente. O comando 'for' processa blocos iterativos com critérios de parada específicos.", codigo: `for (let i = 0; i < 3; i++) {\n  console.log("Contagem: " + i);\n}`, dica: "Loops são ideais para varrer listas de arrays." },
-        { id: 10, badge: "DevTools", titulo: "O Console do Navegador 🛠️", conceito: "O console.log() é o melhor amigo de quem programa. Ele permite conversar e auditar o comportamento interno do script durante os testes.", codigo: `// Aperte F12 no navegador\n// Vá para a aba 'Console'\nconsole.log("Testando script executado!");`, dica: "Erros aparecem em vermelho no console. Leia-os!" }
+        { id: 6, badge: "Estrutura", titulo: "Funções ⚙️", conceito: "Blocos de código projetados para executar tarefas específicas. Você declara a lógica uma vez e a invoca dinamicamente quando precisar.", codigo: `function saudar(user) {\n  return "Olá, " + user;\n}\nconsole.log(saudar("Marcos"));`, dica: "Funções evitam códigos duplicados e confusos." }
     ];
 
-    // --- LÓGICA DE CONTROLE DO POP-UP INTERNO ---
-    function abrirPopupJS() {
-        const popup = document.getElementById('popup-javascript');
-        popup.classList.remove('hidden');
-        document.body.classList.add('overflow-hidden'); // Trava scroll da página de fundo
-        
-        renderizarFiltros();
-        filtrarCards('Todos');
+    const videosCurtos = [
+        { id: 1, titulo: "Arrow Functions em 60 segundos ⚡", duracao: "0:59", link: "#", desc: "Aprenda a sintaxe reduzida moderna do JavaScript e quando utilizá-la nos seus projetos." },
+        { id: 2, titulo: "Desestruturação de Objetos Prática 🚘", duracao: "1:00", link: "#", desc: "Como extrair dados de objetos complexos diretamente para variáveis limpas." }
+    ];
+
+    const quadrinhosDev = [
+        { id: 1, titulo: "A Saga do console.log() ⚔️", capitulo: "Cap. 01", desc: "Uma tirinha bem-humorada ilustrando o desespero do desenvolvedor caçando bugs em produção." },
+        { id: 2, titulo: "Promessas em JS: O Garçom e o Pedido 🍽️", capitulo: "Cap. 02", desc: "Entenda Promises Assíncronas de uma vez por todas fazendo uma analogia com um restaurante." }
+    ];
+
+    const quizDesafios = [
+        { id: 1, titulo: "Quiz: Qual o valor resultante de 2 + '2' em JS? 🧠", dificuldade: "Fácil", alternativas: ["A) 4", "B) '22'", "C) Erro de Compilação"], respostaCorta: "B) '22' (Ocorre concatenação devido ao texto)" },
+        { id: 2, titulo: "Quiz: Qual palavra chave impede reatribuição? 🔒", dificuldade: "Fácil", alternativas: ["A) let", "B) var", "C) const"], respostaCorta: "C) const (Cria uma referência imutável)" }
+    ];
+
+    let abaAtual = 'pilulas';
+
+    // --- CONTROLE DE VISUALIZAÇÃO DO POP-UP ---
+    function abrirTrilha(nomeTrilha) {
+        document.getElementById('popup-titulo-trilha').innerText = `Trilha Interativa de ${nomeTrilha}`;
+        document.getElementById('popup-trilha').classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        mudarAbaPrincipal('pilulas'); // Sempre inicia na aba Pílulas
     }
 
-    function fecharPopupJS() {
-        const popup = document.getElementById('popup-javascript');
-        popup.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden'); // Restaura o scroll
-    }
-
-    // Fecha o modal caso o usuário clique na área escura de fora
-    document.getElementById('popup-javascript').addEventListener('click', function(e) {
-        if (e.target === this) fecharPopupJS();
-    });
-
-    // --- GERAÇÃO DOS FILTROS DENTRO DO POP-UP ---
-    function renderizarFiltros() {
-        const containerFiltros = document.getElementById('container-filtros');
-        if (!containerFiltros) return;
-
-        const categorias = ['Todos', ...new Set(cardsJavaScript.map(card => card.badge))];
-
-        containerFiltros.innerHTML = categorias.map((cat, index) => {
-            const classesAtivas = index === 0 
-                ? 'bg-purple-600 text-white border-purple-500' 
-                : 'bg-zinc-800 text-zinc-400 border-zinc-700 hover:text-white hover:bg-zinc-750';
-            
-            return `
-                <button 
-                    onclick="filtrarCards('${cat}', this)"
-                    class="btn-filtro text-xs font-semibold px-4 py-2 rounded-xl border transition-all duration-200 active:scale-95 ${classesAtivas}"
-                >
-                    ${cat}
-                </button>
-            `;
-        }).join('');
-    }
-
-    // --- RENDEREZAÇÃO E FILTRAGEM DINÂMICA DE CARDS ---
-    function filtrarCards(categoria, elementoBotao = null) {
-        const container = document.getElementById('container-cards');
-        if (!container) return;
-
-        if (elementoBotao) {
-            document.querySelectorAll('.btn-filtro').forEach(btn => {
-                btn.classList.remove('bg-purple-600', 'text-white', 'border-purple-500');
-                btn.classList.add('bg-zinc-800', 'text-zinc-400', 'border-zinc-700');
-            });
-            elementoBotao.classList.remove('bg-zinc-800', 'text-zinc-400', 'border-zinc-700');
-            elementoBotao.classList.add('bg-purple-600', 'text-white', 'border-purple-500');
-        }
-
-        const cardsFiltrados = categoria === 'Todos' 
-            ? cardsJavaScript 
-            : cardsJavaScript.filter(card => card.badge === categoria);
-
-        container.innerHTML = '';
-        cardsFiltrados.forEach(card => {
-            container.innerHTML += `
-                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-purple-500/50 hover:shadow-purple-500/10 transition-all duration-300 overflow-hidden flex flex-col opacity-0 animate-fade-in">
-                    <div class="h-28 bg-gradient-to-br from-zinc-800 via-zinc-900 to-purple-950/40 p-5 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
-                        <div class="z-10">
-                            <span class="bg-purple-950/60 text-purple-400 text-[9px] font-bold px-2 py-0.5 rounded border border-purple-900/30 uppercase tracking-wider">${card.badge}</span>
-                            <h4 class="text-white text-base font-bold tracking-tight mt-1">${card.titulo}</h4>
-                        </div>
-                        <span class="text-5xl absolute -bottom-1 -right-2 opacity-10 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-40 transition-all pointer-events-none select-none">#${card.id}</span>
-                    </div>
-
-                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                        <p class="text-zinc-400 text-xs leading-relaxed">${card.conceito}</p>
-                        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3 overflow-x-auto border-l-2 border-l-purple-500">
-                            <pre class="text-[11px] font-mono text-emerald-400 leading-normal"><code>${card.codigo}</code></pre>
-                        </div>
-                        <div class="border-t border-zinc-700/50 pt-3 text-[11px] text-zinc-500 italic flex items-start gap-1">
-                            <span class="text-purple-400 select-none">💡</span>
-                            <span>${card.dica}</span>
-                        </div>
-                    </div>
-                </div>
-            `;
-        });
-    }
-
-    // --- LÓGICA DO FORMULÁRIO NETLIFY ---
-    document.querySelector('form[name="contato"]').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const myForm = e.target;
-        const formData = new FormData(myForm);
-        formData.append("form-name", "contato");
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
-        })
-        .then(() => window.location.href = "/sucesso.html")
-        .catch((error) => alert("Erro ao enviar mensagem: " + error));
-    });
-
-    // --- MENU MOBILE ---
-    const btnMenu = document.getElementById('btn-menu');
-    const menuMobile = document.getElementById('menu-mobile');
-    btnMenu.addEventListener('click', () => menuMobile.classList.toggle('hidden'));
-    document.querySelectorAll('.link-menu').forEach(link => {
-        link.addEventListener('click', () => menuMobile.classList.add('hidden'));
-    });
-</script>
-
-</html>
+    function fecharTrilha() {
+        document.getElementById('popup-trilha').classList.add('hidden');
+        document.
