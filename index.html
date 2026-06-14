@@ -118,27 +118,92 @@
         </div>
     </section>
 
+    <!-- PROJETOS -->
     <section id="projetos" class="py-20 border-t border-zinc-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-white tracking-tight">Meus Projetos</h2>
+                <p class="text-zinc-250 text-sm mt-2">Aplicações reais desenvolvidas e publicadas</p>
                 <div class="h-1 w-12 bg-blue-500 mx-auto mt-3 rounded-full"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-zinc-800/40 p-6 rounded-2xl border border-zinc-700/50">
-                    <h4 class="text-white text-lg font-bold">Capigenda</h4>
-                    <p class="text-zinc-400 text-xs mt-2">Sistema completo de agenda integrada com autenticação Supabase.</p>
-                    <a href="https://agendamapa.netlify.app/" target="_blank" class="text-blue-400 text-xs font-bold block mt-4">Abrir App 🚀</a>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Projeto 1 -->
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-blue-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">Capigenda</h4>
+                            <p class="text-blue-400 text-xs mt-1 font-medium">Productivity App</p>
+                        </div>
+                        <img src="./images/capi.png" alt="Capivara" class="w-24 h-24 object-contain absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">JS Vanilla</span>
+                                <span class="bg-emerald-950/40 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Supabase</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Agenda Pessoal Segura</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Sistema completo de agenda com autenticação de usuários, segurança RLS, persistência no banco e controle de status em tempo real.</p>
+                        </div>
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://agendamapa.netlify.app/" target="_blank" class="text-sm font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
+                            <a href="https://github.com/Petmarcos/capigenda" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-zinc-800/40 p-6 rounded-2xl border border-zinc-700/50">
-                    <h4 class="text-white text-lg font-bold">MathManager</h4>
-                    <p class="text-zinc-400 text-xs mt-2">Gerador Full Stack de listas de exercícios para professores.</p>
-                    <a href="https://math-manager.vercel.app/" target="_blank" class="text-cyan-400 text-xs font-bold block mt-4">Abrir App 🚀</a>
+
+                <!-- Card Projeto 2 -->
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-cyan-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">MathManager</h4>
+                            <p class="text-cyan-400 text-xs mt-1 font-medium">Educational Tool</p>
+                        </div>
+                        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📐</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
+                                <span class="bg-amber-950/40 text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-900/30 uppercase tracking-wider">Tailwind</span>
+                                <span class="bg-orange-950/40 text-orange-400 text-[10px] font-bold px-2 py-0.5 rounded border border-orange-900/30 uppercase tracking-wider">Firebase</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Gerador Inteligente de Exercícios</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Plataforma Full Stack multiusuário para professores. Cria listas de exercícios personalizadas com lógicas dinâmicas em tempo real.</p>
+                        </div>
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://math-manager.vercel.app/" target="_blank" class="text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
+                            <a href="https://github.com/Petmarcos/math-manager" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-zinc-800/40 p-6 rounded-2xl border border-zinc-700/50">
-                    <h4 class="text-white text-lg font-bold">Capivara Learning</h4>
-                    <p class="text-zinc-400 text-xs mt-2">Validador de históricos e auditoria automatizada de diplomas e-MEC.</p>
-                    <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank" class="text-emerald-400 text-xs font-bold block mt-4">Abrir App 🚀</a>
+
+                <!-- Card Projeto 3 -->
+                <div class="group bg-zinc-800/40 rounded-2xl border border-zinc-700/50 shadow-lg hover:border-zinc-600 transition-all overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-zinc-800 via-zinc-900 to-emerald-950/40 p-6 flex items-center justify-between relative overflow-hidden border-b border-zinc-700/50">
+                        <div class="z-10">
+                            <h4 class="text-white text-2xl font-black tracking-tight">Capivara Learning</h4>
+                            <p class="text-emerald-400 text-xs mt-1 font-medium">Auditoria Acadêmica</p>
+                        </div>
+                        <span class="text-7xl absolute -bottom-2 -right-2 opacity-20 group-hover:scale-110 group-hover:rotate-6 group-hover:opacity-80 transition-all pointer-events-none select-none">📜</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-blue-950/40 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-900/30 uppercase tracking-wider">React</span>
+                                <span class="bg-teal-950/40 text-teal-400 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-900/30 uppercase tracking-wider">FastAPI</span>
+                                <span class="bg-green-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-900/30 uppercase tracking-wider">Python</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Validador Inteligente de Diplomas</h3>
+                            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Ecossistema Full Stack para registros acadêmicos. Cruzamento inteligente de dados e-MEC para validação de turmas.</p>
+                        </div>
+                        <div class="flex items-center gap-4 mt-6 border-t border-zinc-700/50 pt-4">
+                            <a href="https://automatiza-publicacao-diplomas.vercel.app/" target="_blank" class="text-sm font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">Abrir App 🚀</a>
+                            <a href="https://github.com/Petmarcos/NOME-DO-REPOSITORIO" target="_blank" class="text-sm font-semibold text-zinc-500 hover:text-zinc-300 flex items-center gap-1 transition-colors">GitHub 📦</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
